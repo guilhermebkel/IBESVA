@@ -57,6 +57,33 @@
     }
 </script>
 
+<script>
+    function info(action) {
+        if(action == 'next'){
+            var x = document.getElementsByClassName("information-slide");
+            x[0].style.display = "none";
+            x[1].style.display = "block"; 
+        }
+        if(action == 'previous'){
+            var x = document.getElementsByClassName("information-slide");
+            x[0].style.display = "none";
+            x[1].style.display = "block";  
+        }
+    }
+    function filo(action) {
+        if(action == 'next'){
+            var x = document.getElementsByClassName("information-slide");
+            x[1].style.display = "none";
+            x[0].style.display = "block"; 
+        }
+        if(action == 'previous'){
+            var x = document.getElementsByClassName("information-slide");
+            x[1].style.display = "none";
+            x[0].style.display = "block"; 
+        }
+    }
+</script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -96,17 +123,6 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader-inner">
-            <div class="sk-folding-cube">
-                <div class="sk-cube1 sk-cube"></div>
-                <div class="sk-cube2 sk-cube"></div>
-                <div class="sk-cube4 sk-cube"></div>
-                <div class="sk-cube3 sk-cube"></div>
-            </div>
-        </div>
-    </div>
 
     <!-- header -->
     <div id="header--fixed" class="header">
@@ -147,6 +163,7 @@
             </nav>
         </div>
     </div>
+
     <!-- Slider -->
     <div class="slider-rolling">
 
@@ -205,8 +222,6 @@
             </div>
     </div>   
 
-
-
     <!-- Sidebar -->
     <div class="sidebar"> 
         <div class="sidebar-item">
@@ -250,6 +265,34 @@
         </div>
     </div>
 
+    <!-- Information -->
+    <div class="information-rolling">
+        <div class="information-slide">
+            <div class="information-red">
+                <div class="arrow" onclick="info('previous')"><i class="arrow-left"></i></div>
+                <div class="information-text">
+                    <h1>Bem-Vindos ao <strong>IBESVA</strong></h1>
+                    <p>O Instituto de Beneficência Somos Valentes é uma associação filantrópica sem fins lucrativos que tem como objetivo o planejamento e a execução de ações na área da Assistência Social através de programas educativos que visem a inserção das famílias vulneráveis de Niterói e adjacências.</p>
+                </div>
+                <div class="arrow" onclick="info('next')"><i class="arrow-right"></i></div>
+            </div>
+        </div>
+
+        <div class="information-slide">
+            <div class="information-green">
+                <div class="arrow" onclick="filo('previous')"><i class="arrow-left"></i></div>
+                <div class="information-text">
+                    <h1>Nossa <strong>FILOSOFIA</strong></h1>
+                    <p>Uma sociedade igualitária, justa e pacifica só será construída com a participação de todos. É por isso que o Instituto de Beneficência Somos Valentes existe: para unir os interessados e dispostos a levantar a bandeira da solidariedade como expressão de revolta contra um sistema excludente e visceral, onde o egoísmo e indolência transformam a convivência humana numa grande arena de competição em vez de um lindo palco de cooperação.<br>
+                        <br>Os Valentes pensam que nenhuma felicidade é legitima se o preço for a desgraça e miséria alheia, portanto, a causa social é um baluarte que deve ser erguido por todo e qualquer cidadão de bem que vislumbra uma cidade melhor para si e sua família. <br>
+                        <br>Se você tem vontade e desejo de ser um canal de transformação social, venha fazer parte do IBESVA! SEJA UM VALENTE VOCÊ TAMBÉM.
+                    </p>
+                </div>
+                <div class="arrow" onclick="filo('next')"><i class="arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Intro -->
     <div class="intro pd-top-100 pd-bottom-100 text-center">
         <div class="container">
@@ -261,6 +304,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Causes -->
+    
 
     <!-- Recent Cause -->
     <div class="recent-cause pd-top-80 pd-bottom-50">

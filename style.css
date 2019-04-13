@@ -291,7 +291,7 @@ Version: 1.0.0
 .partners { 
     width: 100%; 
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .partners h1{
     text-align: center; 
@@ -302,13 +302,59 @@ Version: 1.0.0
     padding-top: 100px;
 }
 .partners-content{
-    display: flex;
+    display: relative;
 }
-.partners-content img{
+.partners-content div{
+    display: flex; 
+    margin: auto auto 30px auto;
+}
+.partners-content-image{
+    height: 120px; 
+    width: 120px;
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex; 
+    width: 100%; 
+    height: auto; 
+    background-color: #E6E6E6;
+}
+.newsletter-content {
+    width: 80%; 
+    height: auto; 
+    margin: 20px auto 30px auto;
+}
+.newsletter-form {
+    display: flex; 
+    margin: auto;
+}
+.newsletter-form input{
+    width: 600px; 
+    height: 35px; 
+    background-color: white; 
     margin: auto auto;
-    width: auto;
-    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 6px 4px -6px rgba(197, 197, 197, 0.537);
 }
+.newsletter-form button{
+    margin: auto auto;
+}
+.newsletter-title {
+    display:relative; 
+    width: 150px; 
+    margin: auto auto;
+}
+.newsletter-title h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.newsletter-title h2{
+    font-size: 13px; 
+    color: #707070; 
+    margin-top: 0px;
+}
+
 /* ==================================================================
  * Table of Contents:
  *
@@ -807,9 +853,6 @@ input[type=text] {
     color: #ffffff;
     margin: 0;
     opacity: 0.8;
-}
-.newsletter-form {
-    margin-top: 10px;
 }
 .newsletter-form .form-group {
     margin-bottom: 0;
@@ -2736,6 +2779,7 @@ ul.products {
 .footer-section {
     background: #333333;
     color: #7f7f7f;
+    text-align: center
 }
 .footer-top .footer-widget {
     padding-bottom: 50px;

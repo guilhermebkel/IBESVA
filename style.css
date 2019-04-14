@@ -74,30 +74,37 @@ Version: 1.0.0
 }
 .slider-left-side{
     float: left; 
-    height: 100%; 
+    height: auto; 
     width: 100%; 
     background-color: #E6E6E6; 
-    display: relative;
+    display: flex;
+}
+.slider-left-side-center{
+    height: auto; 
+    display: relative; 
+    margin: auto auto;
 }
 .slider-left-side-content{
-    height: 60%; 
-    width: 70%; 
+    height: auto; 
+    width: 450px; 
     margin: auto auto; 
-    margin-top: 100px;
     text-align: left;
+    padding-bottom: 50px;
 }
 .slider-title{
     font-size: 35px;
     font-weight: 500;
-    padding-bottom: 7px;
+    padding-bottom: 15px;
     color: #2E2E2E;
+    margin: auto auto;
 }
 .slider-description{
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     color: #2E2E2E;
+    margin: auto auto;
 }
 .slider-rolling {
     width: auto;
@@ -113,12 +120,13 @@ Version: 1.0.0
 .slider-indicators{
     display: flex; 
     width: 40px; 
-    margin: 0px auto 0px auto;
+    margin: auto auto;
 }
 .slider-indicators div{
     cursor: pointer; 
     padding: 4px 4px 4px 4px;
     border-radius: 100%; 
+    margin: auto auto;
 }
 .slider-indicators .div div{
     width: 8px; 
@@ -183,12 +191,14 @@ Version: 1.0.0
     width: 100%; 
     height: auto; 
     background-image: linear-gradient(to right ,#EF2727, #B10202);
+    box-shadow: 0 6px 4px -6px rgb(100, 100, 100);
 }
 .information-green{
     display: flex; 
     width: 100%; 
     height: auto; 
     background-image: linear-gradient(to right ,#60BC24, #2B6D01);
+    box-shadow: 0 6px 4px -6px rgb(100, 100, 100);
 }
 .information-text {
     margin: 40px auto 40px auto; 

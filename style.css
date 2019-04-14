@@ -137,7 +137,7 @@ Version: 1.0.0
 .sidebar-item{
     display: inline-block; 
     width: auto; 
-    height: 58px; 
+    height: auto; 
     margin: auto auto;
 }
 .sidebar-item-content{
@@ -159,6 +159,7 @@ Version: 1.0.0
     font-weight: bold;
     color: #FF0000;
     font-size: 40px;
+    line-height: 30px;
 }
 .sidebar-item-content-number-green{
     margin: auto auto; 
@@ -166,6 +167,14 @@ Version: 1.0.0
     margin-left: 0;
     color: #18BF1E;
     font-size: 40px;
+    line-height: 30px;
+}
+.sidebar-description{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #2E2E2E;
+    margin: 7px auto auto auto;
 }
 
 /* Informations */

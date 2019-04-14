@@ -7,24 +7,49 @@ Version: 1.0.0
 /*----------------------------------------------------------------*/
 
 /* Styles Added by Guilherme Bromonschenkel */
-/* Navbar Donation Button */
+/* Navbar */
+.made-navbar {
+    height: 70px; 
+    width: 100%; 
+    background-color: white; 
+    display: flex;
+    position: fixed; 
+    z-index: 1; 
+    transition: top 0.3s;
+}
+.made-navbar a {
+    margin: auto auto;
+}
+.made-navbar-logo {
+    height: 50px; 
+}
+.made-navbar-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #5D5D5D;
+}
+.made-navbar-text:hover {
+    color: red;
+    -webkit-transition: all 0.2s ease-in-out;
+}
 .donation-button{
     text-align: center; 
     border-color: red; 
     border-style: solid; 
     border-width: 2px;
     background-color: white; 
-    height: 100%; 
     width: 100%; 
-    padding: 0 15px 0 15px; 
+    padding: 7px 15px 7px 15px; 
     border-radius: 10px; 
+    display: flex;
+    text-align: center; 
     color: red;
-    -webkit-transition: all 0.2s ease-in-out;
     font-weight: bold;
     font-size: 12px;
-    padding: 0px 10px 0px 10px;
+    margin: auto auto;
 }
-.header .main-nav .navbar-left li a div:hover{ 
+.donation-button:hover{
+    -webkit-transition: all 0.2s ease-in-out;
     background-color: red; 
     color: white; 
 }
@@ -631,8 +656,6 @@ input[type=text] {
 .header .main-nav .navbar-left li a {
     color: #5D5D5D;
     line-height: 40px;
-    padding-left: 3vw;
-    padding-right: 2.4vw;
     font-weight: bold;
     font-size: 12px;
 }

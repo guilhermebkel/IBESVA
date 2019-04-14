@@ -13,10 +13,36 @@
     gtag('config', 'UA-133762638-1');
   </script>
 
+<!-- Slider -->
 <script>
+    setInterval(()=> {
+        var x = document.getElementsByClassName("slide");
+
+        if(x[0].style.display == "block"){ 
+            x[0].style.display = "none";
+            x[2].style.display = "none";  
+            x[1].style.display = "block";
+            x[1].style.animation = "fadeIn 2.5s";      
+        }
+        else if(x[1].style.display == "block"){ 
+            x[0].style.display = "none";
+            x[1].style.display = "none";  
+            x[2].style.display = "block";
+            x[2].style.animation = "fadeIn 2.5s";      
+        }
+        else if(x[2].style.display == "block"){ 
+            x[2].style.display = "none";
+            x[1].style.display = "none";  
+            x[0].style.display = "block";
+            x[0].style.animation = "fadeIn 2.5s";      
+        }
+
+    }, 7000)
+
     function firstSlide(action) {
         if(action == 'next'){
             var x = document.getElementsByClassName("slide");
+            x[1].style.animation = "fadeIn 1s";
             x[0].style.display = "none";
             x[1].style.display = "block"; 
         }
@@ -25,6 +51,7 @@
             x[0].style.display = "none";
             x[1].style.display = "none"; 
             x[2].style.display = "block"; 
+            x[2].style.animation = "fadeIn 1s";
         }
     }
     function secondSlide(action) {
@@ -33,12 +60,14 @@
             x[2].style.display = "block";
             x[1].style.display = "none"; 
             x[0].style.display = "none"; 
+            x[2].style.animation = "fadeIn 1s";
         }
         if(action == 'previous'){
             var x = document.getElementsByClassName("slide");
             x[0].style.display = "block";
             x[1].style.display = "none"; 
             x[2].style.display = "none"; 
+            x[0].style.animation = "fadeIn 1s";
         }
     }
     function thirdSlide(action) {
@@ -47,39 +76,34 @@
             x[0].style.display = "block";
             x[1].style.display = "none"; 
             x[2].style.display = "none"; 
+            x[0].style.animation = "fadeIn 1s";
         }
         if(action == 'previous'){
             var x = document.getElementsByClassName("slide");
             x[0].style.display = "none";
             x[1].style.display = "block"; 
-            x[2].style.display = "none";  
+            x[2].style.display = "none";
+            x[1].style.animation = "fadeIn 1s";  
         }
     }
 </script>
 
+<!-- Sidebar-->
 <script>
     function info(action) {
-        if(action == 'next'){
+        if(action == 'filo'){
             var x = document.getElementsByClassName("information-slide");
             x[0].style.display = "none";
             x[1].style.display = "block"; 
-        }
-        if(action == 'previous'){
-            var x = document.getElementsByClassName("information-slide");
-            x[0].style.display = "none";
-            x[1].style.display = "block";  
+            x[1].style.animation = "fadeIn 1.5s";
         }
     }
     function filo(action) {
-        if(action == 'next'){
+        if(action == 'info'){
             var x = document.getElementsByClassName("information-slide");
             x[1].style.display = "none";
             x[0].style.display = "block"; 
-        }
-        if(action == 'previous'){
-            var x = document.getElementsByClassName("information-slide");
-            x[1].style.display = "none";
-            x[0].style.display = "block"; 
+            x[0].style.animation = "fadeIn 1.5s";
         }
     }
 </script>
@@ -167,7 +191,7 @@
     <!-- Slider -->
     <div class="slider-rolling">
 
-            <div class="slide" id="slide-1">
+            <div class="slide" id="slide-1" style="display: block">
                 <div class = "slider">
                     <div class = "slider-left-side">
                         <div class = "slider-left-side-content">
@@ -185,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="slide" id="slide-2">
+            <div class="slide" id="slide-2" style="display: none">
                 <div class = "slider" id="slider2">
                     <div class = "slider-left-side">
                         <div class = "slider-left-side-content">
@@ -203,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="slide" id="slide-3">
+            <div class="slide" id="slide-3" style="display: none">
                 <div class = "slider">
                     <div class = "slider-left-side">
                         <div class = "slider-left-side-content">
@@ -269,18 +293,18 @@
     <div class="information-rolling">
         <div class="information-slide">
             <div class="information-red">
-                <div class="arrow" onclick="info('previous')"><i class="arrow-left"></i></div>
+                <div class="arrow" onclick="info('filo')"><i class="arrow-left"></i></div>
                 <div class="information-text">
                     <h1>Bem-Vindos ao <strong>IBESVA</strong></h1>
                     <p>O Instituto de Beneficência Somos Valentes é uma associação filantrópica sem fins lucrativos que tem como objetivo o planejamento e a execução de ações na área da Assistência Social através de programas educativos que visem a inserção das famílias vulneráveis de Niterói e adjacências.</p>
                 </div>
-                <div class="arrow" onclick="info('next')"><i class="arrow-right"></i></div>
+                <div class="arrow" onclick="info('filo')"><i class="arrow-right"></i></div>
             </div>
         </div>
 
         <div class="information-slide" style="display: none">
             <div class="information-green">
-                <div class="arrow" onclick="filo('previous')"><i class="arrow-left"></i></div>
+                <div class="arrow" onclick="filo('info')"><i class="arrow-left"></i></div>
                 <div class="information-text">
                     <h1>Nossa <strong>FILOSOFIA</strong></h1>
                     <p>Uma sociedade igualitária, justa e pacifica só será construída com a participação de todos. É por isso que o Instituto de Beneficência Somos Valentes existe: para unir os interessados e dispostos a levantar a bandeira da solidariedade como expressão de revolta contra um sistema excludente e visceral, onde o egoísmo e indolência transformam a convivência humana numa grande arena de competição em vez de um lindo palco de cooperação.<br>
@@ -288,7 +312,7 @@
                         <br>Se você tem vontade e desejo de ser um canal de transformação social, venha fazer parte do IBESVA! SEJA UM VALENTE VOCÊ TAMBÉM.
                     </p>
                 </div>
-                <div class="arrow" onclick="filo('next')"><i class="arrow-right"></i></div>
+                <div class="arrow" onclick="filo('info')"><i class="arrow-right"></i></div>
             </div>
         </div>
     </div>

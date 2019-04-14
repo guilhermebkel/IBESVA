@@ -58,7 +58,7 @@ Version: 1.0.0
 
 /* Slider */
 .slider {
-    height: 400px; 
+    height: 65vh; 
     display: flex;
     margin-top: 70px;
 }
@@ -104,7 +104,7 @@ Version: 1.0.0
     height: auto;
     display: flex;
     /*overflow-x: auto;*/
-  }
+}
 .slide {
     width: 100%;
     flex-shrink: 0;
@@ -130,7 +130,7 @@ Version: 1.0.0
 /* Sidebar */
 .sidebar{
     background-color: white; 
-    height: 130px; 
+    height: 25vh; 
     text-align: center; 
     display: flex;
 }
@@ -215,14 +215,20 @@ Version: 1.0.0
 .arrow{
     cursor: pointer; 
     margin: auto auto; 
-    padding: 15px; display: flex;
+    padding: 15px; 
+    display: flex;
+    background: transparent;
+}
+.arrow:hover{
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-transition: all 0.2s ease-in-out;
 }
 .arrow i {
     border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
-  }
+}
 .arrow-right {
     margin: auto auto;
     transform: rotate(-45deg);
@@ -260,6 +266,10 @@ Version: 1.0.0
     margin: auto auto; 
     width: auto; 
     height: auto;
+}
+.causes-card-content:hover {
+    opacity: 0.8;
+    -webkit-transition: all 0.2s ease-in-out;
 }
 .causes-card-content img {
     height: auto; 
@@ -311,6 +321,10 @@ Version: 1.0.0
 .partners-content-image{
     height: 120px; 
     width: 120px;
+}
+.partners-content-image a:hover{
+    box-shadow: 0px 6px 6px 0px #E6E6E6;
+    background-color: #E6E6E6;
 }
 
 /* Newsletter */
@@ -598,8 +612,8 @@ input[type=text] {
 .header .main-nav .navbar-left li a {
     color: #5D5D5D;
     line-height: 40px;
-    padding-top: 15px; 
-    padding-left: 55px;
+    padding-left: 3vw;
+    padding-right: 2.4vw;
     font-weight: bold;
     font-size: 12px;
 }

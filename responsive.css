@@ -23,6 +23,14 @@
 }
 
 @media only screen and (max-width:500px) {
+    .page-header {
+        @supports (-webkit-appearance:none) {
+          .os-android & {
+            min-height: calc(100vh - 56px);
+          }
+        }
+      }
+    /*======= Navbar ==========*/
     
     /* ========= Causes =============*/
     .causes {
@@ -71,7 +79,6 @@
 
     /* ========= Slider =============*/
     .slider-left-side{
-        float: left; 
         height: auto; 
         width: 100vw; 
         background-color: #E6E6E6; 

@@ -23,15 +23,14 @@
 }
 
 @media only screen and (max-width:500px) {
-    .page-header {
-        @supports (-webkit-appearance:none) {
-          .os-android & {
-            min-height: calc(100vh - 56px);
-          }
-        }
-      }
     /*======= Navbar ==========*/
-    
+    #collapse-navbar{
+        display: block;
+    }
+    #original-navbar{
+        display: none;
+    }
+
     /* ========= Causes =============*/
     .causes {
         width: 100%; 
@@ -78,6 +77,11 @@
     }    
 
     /* ========= Slider =============*/
+    .slider {
+        height: 63vh; 
+        display: flex;
+        margin-top: 68px;
+    }
     .slider-left-side{
         height: auto; 
         width: 100vw; 

@@ -51,6 +51,33 @@ Version: 1.0.0
 * 40.0 - Preloader
 ================================================================== */
 
+/* Collapse Navbar */
+#collapse-navbar{
+    display: none;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: white;
+    border-width: 0;
+    position: fixed; 
+    z-index: 1; 
+    width: 100vw;
+    height: 13.2vh;
+}
+#no-border{
+    border-width: 0;
+    background-color: white;
+}
+.no-border{
+    border-width: 0;
+}
+#active{
+    background-color: red;
+    color: white;
+}
+#collapse-icon{
+    background-color: red;
+}
+
 /* Navbar */
 .made-navbar {
     height: 11vh;

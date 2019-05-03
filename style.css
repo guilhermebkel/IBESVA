@@ -53,7 +53,7 @@ Version: 1.0.0
 
 /* Navbar */
 .made-navbar {
-    height: 70px; 
+    height: 11vh; 
     width: 100%; 
     background-color: white; 
     display: flex;
@@ -208,7 +208,7 @@ Version: 1.0.0
 /* Sidebar */
 .sidebar{
     background-color: white; 
-    height: 25vh; 
+    height: 24vh; 
     text-align: center; 
     display: flex;
 }

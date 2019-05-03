@@ -65,7 +65,7 @@
         margin: auto auto; 
         padding-bottom: 10px; 
         color: #707070; 
-        font-size: 2.5vw; 
+        font-size: 3vw; 
         font-weight: lighter
     }    
 
@@ -91,7 +91,7 @@
         margin: auto auto;
     }
     .slider-description{
-        font-size: 2.5vw;
+        font-size: 3vw;
         font-weight: 500;
         line-height: 15px;
         padding-bottom: 20px;

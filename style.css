@@ -132,6 +132,9 @@ input[type=text] {
 /* ==================================================================
   3.0 Original Navbar
 ================================================================== */
+#made-navbar-active{
+    color: red;
+}
 .made-navbar {
     height: 11vh;
     width: 100%; 
@@ -289,6 +292,14 @@ input[type=text] {
 /* ==================================================================
   5.0 Sidebar
 ================================================================== */
+#sidebar-align{
+    display: flex; 
+    margin: auto auto;
+}
+#sidebar-align img{
+    height: 30px;
+    width: auto;
+}
 .sidebar{
     background-color: white; 
     height: 24vh; 
@@ -490,6 +501,7 @@ input[type=text] {
 }
 .partners-content{
     display: relative;
+    margin-top: 50px;
 }
 .partners-content div{
     display: flex; 

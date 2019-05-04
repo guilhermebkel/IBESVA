@@ -15,8 +15,8 @@
         gtag('config', 'UA-133762638-1');
     </script>
 
-    <!-- Slider -->
-    <script>   
+    <!-- Slider Transition -->
+    <script>
         setInterval(() => {
             var x = document.getElementsByClassName("slide");
 
@@ -40,7 +40,6 @@
             }
 
         }, 7000)
-
         function firstSlide(action) {
             if (action == 'next') {
                 var x = document.getElementsByClassName("slide");
@@ -90,10 +89,10 @@
         }
     </script>
 
-    <!-- Sidebar-->
+    <!-- Information Transition-->
     <script>
         function info(action) {
-            if (action == 'filo') {
+            if (action == 'next' || action == 'previous') {
                 var x = document.getElementsByClassName("information-slide");
                 x[0].style.display = "none";
                 x[1].style.display = "block";
@@ -101,7 +100,7 @@
             }
         }
         function filo(action) {
-            if (action == 'info') {
+            if (action == 'previous' || action == 'next') {
                 var x = document.getElementsByClassName("information-slide");
                 x[1].style.display = "none";
                 x[0].style.display = "block";
@@ -155,7 +154,7 @@
     <!-- Original Navbar -->
     <div id="original-navbar" class="made-navbar">
         <a href="index.html"><img class="made-navbar-logo" src="images/logo.png" alt="IBESVA"></a>
-        <a class="made-navbar-text" href="index.html">HOME</a>
+        <a id="made-navbar-active" class="made-navbar-text" href="index.html">HOME</a>
         <a class="made-navbar-text" href="quemsomos.html">QUEM SOMOS</a>
         <a class="made-navbar-text" href="parceiros.html">PARCEIROS</a>
         <a class="made-navbar-text" href="acompanhe.html">ACOMPANHE</a>
@@ -191,11 +190,10 @@
             </div>
         </div>
     </nav>
-     
+
     <!-- Slider -->
     <div class="slider-rolling">
-
-        <div class="slide" id="slide-1" style="display: block">
+        <div class="slide" id="slide-1" style="display: block;">
             <div class="slider">
                 <div class="slider-left-side">
                     <div class="slider-left-side-center">
@@ -285,7 +283,7 @@
     <div class="sidebar">
         <div class="sidebar-item">
             <div class="sidebar-item-content">
-                <img class="sidebar-item-content-img" src="images/icons/sidebar1.png">
+                <img class="sidebar-item-content-img" src="images/icons/home/sidebar1.png">
                 <h1 class="sidebar-item-content-number-red">32</h1>
             </div>
             <div>
@@ -295,7 +293,7 @@
 
         <div class="sidebar-item">
             <div class="sidebar-item-content">
-                <img class="sidebar-item-content-img" src="images/icons/sidebar2.png">
+                <img class="sidebar-item-content-img" src="images/icons/home/sidebar2.png">
                 <h1 class="sidebar-item-content-number-green">6</h1>
             </div>
             <div>
@@ -305,7 +303,7 @@
 
         <div class="sidebar-item">
             <div class="sidebar-item-content">
-                <img class="sidebar-item-content-img" src="images/icons/sidebar3.png">
+                <img class="sidebar-item-content-img" src="images/icons/home/sidebar3.png">
                 <h1 class="sidebar-item-content-number-red">17</h1>
             </div>
             <div>
@@ -315,7 +313,7 @@
 
         <div class="sidebar-item">
             <div class="sidebar-item-content">
-                <img class="sidebar-item-content-img" src="images/icons/sidebar4.png">
+                <img class="sidebar-item-content-img" src="images/icons/home/sidebar4.png">
                 <h1 class="sidebar-item-content-number-green">41</h1>
             </div>
             <div>
@@ -328,20 +326,20 @@
     <div class="information-rolling">
         <div class="information-slide">
             <div class="information-red">
-                <div class="arrow" onclick="info('filo')"><i class="arrow-left"></i></div>
+                <div class="arrow" onclick="info('previous')"><i class="arrow-left"></i></div>
                 <div class="information-text">
                     <h1>Bem-Vindos ao <strong>IBESVA</strong></h1>
                     <p>O Instituto de Beneficência Somos Valentes é uma associação filantrópica sem fins lucrativos que
                         tem como objetivo o planejamento e a execução de ações na área da Assistência Social através de
                         programas educativos que visem a inserção das famílias vulneráveis de Niterói e adjacências.</p>
                 </div>
-                <div class="arrow" onclick="info('filo')"><i class="arrow-right"></i></div>
+                <div class="arrow" onclick="info('next')"><i class="arrow-right"></i></div>
             </div>
         </div>
 
         <div class="information-slide" style="display: none">
             <div class="information-green">
-                <div class="arrow" onclick="filo('info')"><i class="arrow-left"></i></div>
+                <div class="arrow" onclick="filo('previous')"><i class="arrow-left"></i></div>
                 <div class="information-text">
                     <h1>Nossa <strong>FILOSOFIA</strong></h1>
                     <p>Uma sociedade igualitária, justa e pacifica só será construída com a participação de todos. É por
@@ -356,7 +354,7 @@
                         IBESVA! SEJA UM VALENTE VOCÊ TAMBÉM.
                     </p>
                 </div>
-                <div class="arrow" onclick="filo('info')"><i class="arrow-right"></i></div>
+                <div class="arrow" onclick="filo('next')"><i class="arrow-right"></i></div>
             </div>
         </div>
     </div>

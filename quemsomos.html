@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
+<!-- Novo Design feito por Guilherme Bromonschenkel -->
 <!-- Desenvolvido por ZAMBROTTI - Soluções em Informática / Cópia proíbida e protegida por lei. -->
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114999867-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-114999867-1');
-</script>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133762638-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133762638-1');
+    </script>
+
+    <!-- Information Transition-->
+    <script>
+        function info(action) {
+            if (action == 'next' || action == 'previous') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "none";
+                x[1].style.display = "block";
+                x[1].style.animation = "fadeIn 1.5s";
+            }
+        }
+        function filo(action) {
+            if (action == 'previous' || action == 'next') {
+                var x = document.getElementsByClassName("information-slide");
+                x[1].style.display = "none";
+                x[0].style.display = "block";
+                x[0].style.animation = "fadeIn 1.5s";
+            }
+        }
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="O Instituto de Beneficência Somos Valentes é uma associação beneficente sem fins lucrativos que tem como objetivo o planejamento de ações na área de educação e saúde visando a combater a desigualdade social.">
-    <meta name="author" content="Zambrotti - Soluções em Informática">
+    <meta name="description"
+        content="O Instituto de Beneficência Somos Valentes é uma associação beneficente sem fins lucrativos que tem como objetivo o planejamento de ações na área de educação e saúde visando a combater a desigualdade social.">
+    <meta name="author" content="Zambrotti - Soluções em Informática / Guilherme Bromonschenkel">
     <meta name="keywords" content="IBESVA, Instituto de Beneficência Somos Valentes, filantropia, filantrópica">
     <title>IBESVA - Instituto de Beneficência Somos Valentes</title>
 
@@ -44,248 +66,247 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="space.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
-    
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
     <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
-    <!-- header -->
-    <div id="header--fixed" class="header">
-        <div class="nav-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-5 col-lg-4">
-                        <div class="phone">
-                            <i class="fa fa-volume-control-phone"></i>21 2722-1892
+
+    <!-- Original Navbar -->
+    <div id="original-navbar" class="made-navbar">
+        <a href="index.html"><img class="made-navbar-logo" src="images/logo.png" alt="IBESVA"></a>
+        <a class="made-navbar-text" href="index.html">HOME</a>
+        <a id="made-navbar-active" class="made-navbar-text" href="quemsomos.html">QUEM SOMOS</a>
+        <a class="made-navbar-text" href="parceiros.html">PARCEIROS</a>
+        <a class="made-navbar-text" href="acompanhe.html">ACOMPANHE</a>
+        <a class="made-navbar-text" href="associe-se.html">ASSOCIE-SE</a>
+        <a class="made-navbar-text" href="contato.html">CONTATO</a>
+        <a href="doacao.html">
+            <div class="donation-button">DOAÇÕES</div>
+        </a>
+    </div>
+
+    <!-- Collapse Navbar -->
+    <nav id="collapse-navbar" class="navbar navbar-inverse">
+        <div class="container-fluid" id="no-border">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    id="no-border">
+                    <span class="icon-bar" id="collapse-icon"></span>
+                    <span class="icon-bar" id="collapse-icon"></span>
+                    <span class="icon-bar" id="collapse-icon"></span>
+                </button>
+                <a href="index.html"><img class="made-navbar-logo" src="images/logo.png" alt="IBESVA"></a>
+            </div>
+            <div class="collapse navbar-collapse no-border" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="made-navbar-text" href="index.html">HOME</a></li>
+                    <li><a id="active" class="made-navbar-text" href="quemsomos.html">QUEM SOMOS</a></li>
+                    <li><a class="made-navbar-text" href="parceiros.html">PARCEIROS</a></li>
+                    <li><a class="made-navbar-text" href="acompanhe.html">ACOMPANHE</a></li>
+                    <li><a class="made-navbar-text" href="associe-se.html">ASSOCIE-SE</a></li>
+                    <li><a class="made-navbar-text" href="contato.html">CONTATO</a></li>
+                    <li><a class="made-navbar-text" href="doacao.html">DOAÇÕES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider-rolling">
+        <div class="slide" id="slide-1" style="display: block;">
+            <div class="slider">
+                <div class="slider-left-side">
+                    <div class="slider-left-side-center">
+                        <div class="slider-left-side-content">
+                            <h2 class="slider-title">Quem Somos?</h2>
+                            <p class="slider-description">O Instituto de Beneficência Somos Valentes é uma associação filantrópica sem fins 
+                                lucrativos que tem realizado projetos sociais na área de educação e saúde visando o combate à desigualdade social.
+                            </p>
                         </div>
-                        <div class="email">
-                            <i class="fa fa-envelope"></i>contato@ibesva.com
-                        </div>
-                        <a href="doacao.html" class="btn btn-red">Doações</a>
-                    </div>
-                    <div class="col-md-3 col-lg-4 ">
-                      
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                         <div class="social">
-                            <a href="https://www.facebook.com/Ibesva/" target="_blank"> <i class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/ibesva/" target="_blank"> <i class="fa fa-instagram"></i></a>
-                            <a href="https://twitter.com/ibesva1" target="_blank"> <i class="fa fa-twitter"></i></a>
-                            <a href="skype:Instituto Somos Valentes?chat" > <i class="fa fa-skype"></i></a>
-                            <a href="https://www.youtube.com/channel/UCTy3Cvu4SE8czmW8fIi3gtA" target="_blank"> <i class="fa fa-youtube"></i></a>
-							 <a href="http://api.whatsapp.com/send?1=pt_BR&phone=552137413455"> <i class="fa fa-whatsapp"></i></a>
-                        </div>                        <a class="join-top" href="contato.html"><i class="fa fa-user-circle"></i>Seja um Voluntário</a>
-                       
-                      
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div id="main-nav" class="main-nav">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
-                            <span class="sr-only">Menu</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img class="retina" src="images/logo.png" alt="IBESVA"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="main-navbar">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="quemsomos.html">Quem Somos</a></li>
-                            <li><a href="parceiros.html">Parceiros</a></li>
-                            <li><a href="acompanhe.html">Acompanhe</a></li>
-                            <li><a href="associe-se.html">Associe-se</a></li>                          
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right hidden-xs">
-                            
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Page title -->
-    <div class="page-title-section">
-        <div class="page-title-wrap">
-            <div class="page-title-overlay"></div>
-            <div class="page-title-info">
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Quem Somos</li>
-                </ol>
-                <h1 class="page-title">Quem Somos</h1>
-            </div>
-        </div>
-    </div>
-
-    <!-- About section start-->
-    <div class="about-section mg-top-100 mg-bottom-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <p class="about-content mg-bottom-80">O Instituto de Beneficência Somos Valentes é uma associação filantrópica sem fins lucrativos que tem realizado projetos sociais na área de educação e saúde visando o combate à desigualdade social.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="about-single">
-                        <img src="images/about/1.jpg" alt="IBESVA">
-                        <div class="inner-title">Esporte</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="about-single">
-                        <img src="images/about/2.jpg" alt="IBESVA">
-                        <div class="inner-title">Nutrição</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="about-single">
-                        <img src="images/about/3.jpg" alt="IBESVA">
-                        <div class="inner-title">Atendimento</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="about-single">
-                        <img src="images/about/4.jpg" alt="IBESVA">
-                        <div class="inner-title">Educação</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="section-title">Nossos Valores <i class="fa fa-heart"></i></h2>
-                </div>
-             </div>
-            
-             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <p class="about-content mg-bottom-80" align="justify">Somos um grupo que levanta a bandeira do ecumenismo na aplicação prática de nossas ações. Entendemos que a construção de uma sociedade justa e a luta pela evolução das condições de vida do ser humano é um denominador comum a todas as expressões de fé, o que acaba por minimizar suas diferenças de credo e crença, as quais ainda que devam ser conservados e respeitados, não devem se tornar um empecilho para ações conjuntas que elevem o nível de vida das pessoas. <br><br>
-Defendemos arduamente a democracia e, ainda que apartidário, o IBESVA não se abstém de emitir suas opiniões em relação às políticas públicas que tanto afetam o cotidiano da população em geral. Na verdade, entendemos que a prática democrática não se limita a votar e ser votado e lutamos com afinco para maior conscientização e participação dos cidadãos de bem nas decisões do governo em suas esferas. <br><br>
-Lutamos pela solidificação dos laços fraternos no âmbito interno de todas as famílias, tenham elas a composição que tiver. Não vemos motivo para que os direitos sociais sejam tolhidos dos cidadãos brasileiro, independentemente de questões étnicas, religiosas, opção sexual, classe social e etc. É nosso desejo que o respeito ao diferente e o direito ao contraditório sejam pilares nas relações interpessoais. </p>
-                </div>
-            </div>
-            
-              <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="section-title">Nossa Missão <i class="fa fa-heart"></i></h2>
-                </div>
-             </div>
-            
-             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <p class="about-content mg-bottom-80" align="justify">Ser um elo entre o poder público e as famílias em situações de crise, levando aos órgãos competentes suas demandas e elaborando soluções em conjunto para os problemas mapeados. <br><br>Formar cada associado do IBESVA em um agente de transformação de realidade de seu bairro, zelando pela limpeza e conservação dos espaços públicos, a boa relação entre os diferentes atores sociais e o combate incessante à desordem urbana, ao vício e ao caos.<br><br>Atuar nas necessidades das famílias em situações de crise, procurando transformar suas realidades adversas através de ações planejadas nas áreas de:<br>Assistência social (doação de alimentos básicos, vestuário e outros itens em casos críticos); <br><br>
-Saúde (programas de higiene, salubridade doméstica e prevenção de doenças através de orientação nutricional) <br><br>
-Educação (combate ao analfabetismo digital e funcional, ministração de cursos técnicos e palestras motivacionais, formação de cidadania e afins); <br><br>
-Cultura e Esporte (ações esportivas e culturais com vistas à maior integração social entre pessoas com carência). 
-</p>
-                </div>
-            </div>
-            
-              <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="section-title">Apresentação <i class="fa fa-heart"></i></h2>
-                </div>
-             </div>
-            
-             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <p class="about-content mg-bottom-80"><strong>Diretoria:</strong><br><img src="images/about/team/diretora1.jpg" alt="IBESVA"/><br><br>
-<strong>Presidente:</strong> Jordean de Souza de Rezende<br><br>
-<strong>Vice-Presidente:</strong> Nilton de Oliveira Martins<br><br>
-
-<strong>Primeiro Secretário:</strong> Daniel da Silva Queiroz Valente<br><br>
-<strong>Segundo Secretário:</strong> Noelia Oliveira Sales da Silva<br><br>
-<strong>Primeiro Tesoureiro:</strong> José Anildo Simões da Costa<br><br>
-<strong>Segundo Tesoureiro:</strong> Reginaldo Rocha Martins<br><br>
-<br>
-<br>
-<strong>Titulares do Conselho Fiscal:</strong><br><br>
-José Cléber Tomaz de Assis<br><br>
-Azenaide da Silva Queiroz<br><br>
-Pedro Felipe de Souza Júnior<br><br><br>
-<br>
-<strong>Suplentes do Conselho Fiscal:</strong><br><br>
-Marcos Luis de Moura Queiroz<br><br>
-Marlene Silva Santos de Assis<br><br>
-Fernanda Carvalho Barbosa<br><br>
-<br>
-<br>
-
-
-
-<img src="images/about/team/diretoria1.jpg" alt="IBESVA"/></p>
-                </div>
-            </div>
-           
-        </div>
-    </div>
-
-    <div class="call-to-action pd-top-80 pd-bottom-100">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>Você que ajudar?</h2>
-                    <p>Associe-se e seja um parceiro</p>
-                    <a class="btn btn-red mg-top-30" href="associe-se.html">Associe-se</a>
+                <div class="slider-right-side"><img class="slider-img" alt="slide" src="images/slider/slider-2.jpg">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Clients -->
-    <div class="bg-2 clients pd-top-80 pd-bottom-80" data-animation="fadeIn">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="section-title">Alguns Parceiros <i class="fa fa-user"></i></h2>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                    <img src="images/partner/1.png" alt="Parceiros ">
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                    <img src="images/partner/2.png" alt="Parceiros ">
-                    </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                    <img src="images/partner/3.png" alt="Parceiros ">
-                    </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                    <img src="images/partner/4.png" alt="Parceiros ">
-                    </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                    <img src="images/partner/5.png" alt="Parceiros ">
-                    </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                    <img src="images/partner/6.png" alt="Parceiros ">
-                </div>
-                <div class="col-sm-12 mg-top-30 text-center">
-                    Quer ver mais sobre nossos parceiros? <a href="parceiros.html">Clique Aqui!</a>
-                </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <div class="sidebar-item-content" id="sidebar-align">
+                <img class="sidebar-item-content-img" id="sidebar-align" src="images/icons/quem-somos/sidebar1.png">
+            </div>
+            <div>
+                <p class="sidebar-description">Esporte</p>
+            </div>
+        </div>
+
+        <div class="sidebar-item">
+            <div class="sidebar-item-content" id="sidebar-align">
+                <img class="sidebar-item-content-img" id="sidebar-align" src="images/icons/quem-somos/sidebar2.png">
+            </div>
+            <div>
+                <p class="sidebar-description">Nutrição</p>
+            </div>
+        </div>
+
+        <div class="sidebar-item">
+            <div class="sidebar-item-content" id="sidebar-align">
+                <img class="sidebar-item-content-img" id="sidebar-align" src="images/icons/quem-somos/sidebar3.png">
+            </div>
+            <div>
+                <p class="sidebar-description">Atendimento</p>
+            </div>
+        </div>
+
+        <div class="sidebar-item">
+            <div class="sidebar-item-content" id="sidebar-align">
+                <img class="sidebar-item-content-img" id="sidebar-align" src="images/icons/quem-somos/sidebar4.png">
+            </div>
+            <div>
+                <p class="sidebar-description">Educação</p>
             </div>
         </div>
     </div>
 
-    <!-- footer -->
+    <!-- Information -->
+    <div class="information-rolling">
+        <div class="information-slide">
+            <div class="information-red">
+                <div class="arrow" onclick="info('previous')"><i class="arrow-left"></i></div>
+                <div class="information-text">
+                    <h1>Nossos <strong>VALORES</strong></h1>
+                    <p>Somos um grupo que levanta a bandeira do ecumenismo na aplicação prática 
+                        de nossas ações. Entendemos que a construção de uma sociedade justa e a luta pela evolução das condições de vida do ser 
+                        humano é um denominador comum a todas as expressões de fé, o que acaba por minimizar suas diferenças de credo e crença, 
+                        as quais ainda que devam ser conservados e respeitados, não devem se tornar um empecilho para ações conjuntas que elevem 
+                        o nível de vida das pessoas. <br><br>
+                        Defendemos arduamente a democracia e, ainda que apartidário, o IBESVA não se abstém de emitir suas opiniões em relação às 
+                        políticas públicas que tanto afetam o cotidiano da população em geral. Na verdade, entendemos que a prática democrática 
+                        não se limita a votar e ser votado e lutamos com afinco para maior conscientização e participação dos cidadãos de bem nas 
+                        decisões do governo em suas esferas. <br><br>
+                        Lutamos pela solidificação dos laços fraternos no âmbito interno de todas as famílias, tenham elas a composição que tiver. 
+                        Não vemos motivo para que os direitos sociais sejam tolhidos dos cidadãos brasileiro, independentemente de questões étnicas, 
+                        religiosas, opção sexual, classe social e etc. É nosso desejo que o respeito ao diferente e o direito ao contraditório sejam 
+                        pilares nas relações interpessoais. </p>
+                </div>
+                <div class="arrow" onclick="info('next')"><i class="arrow-right"></i></div>
+            </div>
+        </div>
+
+        <div class="information-slide" style="display: none">
+            <div class="information-green">
+                <div class="arrow" onclick="filo('previous')"><i class="arrow-left"></i></div>
+                <div class="information-text">
+                    <h1>Nossa <strong>MISSÃO</strong></h1>
+                    <p>Ser um elo entre o poder público e as famílias em situações de crise, 
+                        levando aos órgãos competentes suas demandas e elaborando soluções em conjunto para os problemas mapeados. 
+                        <br><br>Formar cada associado do IBESVA em um agente de transformação de realidade de seu bairro, zelando pela limpeza e 
+                        conservação dos espaços públicos, a boa relação entre os diferentes atores sociais e o combate incessante à desordem urbana, 
+                        ao vício e ao caos.
+                        <br><br>Atuar nas necessidades das famílias em situações de crise, procurando transformar suas realidades 
+                        adversas através de ações planejadas nas áreas de:
+                        <br>Assistência social (doação de alimentos básicos, vestuário e outros itens 
+                        em casos críticos); 
+                        <br><br>
+                        Saúde (programas de higiene, salubridade doméstica e prevenção de doenças através de orientação nutricional) 
+                        <br><br>
+                        Educação (combate ao analfabetismo digital e funcional, ministração de cursos técnicos e palestras motivacionais, 
+                        formação de cidadania e afins); 
+                        <br><br>
+                        Cultura e Esporte (ações esportivas e culturais com vistas à maior integração social entre pessoas com carência). 
+                    </p>
+                </div>
+                <div class="arrow" onclick="filo('next')"><i class="arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Causes -->
+    <div class="causes">
+        <h1>Abraçe uma causa</h1>
+    </div>
+    <div class="causes">
+        <div class="causes-card">
+            <a href="contato.html" class="causes-card-content">
+                <img alt="cause" src="images/causes/9.jpg">
+                <div class="causes-card-content-info">
+                    <h1>Por uma educação equânime</h1>
+                    <p>Cursos, palestras, oficinas</p>
+                </div>
+            </a>
+
+            <a href="contato.html" class="causes-card-content">
+                <img alt="cause" src="images/causes/8.jpg">
+                <div class="causes-card-content-info">
+                    <h1>Pelo combate à fome</h1>
+                    <p>Nutrição, Hidratação, Saneamento</p>
+                </div>
+            </a>
+
+            <a href="contato.html" class="causes-card-content">
+                <img alt="cause" src="images/causes/7.jpg">
+                <div class="causes-card-content-info">
+                    <h1>Pela justiça social</h1>
+                    <p>Cidadania, Igualdade de Oportunidades</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Partners -->
+    <div class="partners">
+        <h1>Parceiros</h1>
+        <div class="partners-content">
+            <div>
+                <div class="partners-content-image"><img src="images/partner/1.png"></div>
+                <div class="partners-content-image"><img src="images/partner/2.png"></div>
+                <div class="partners-content-image"><img src="images/partner/3.png"></div>
+            </div>
+            <div>
+                <div class="partners-content-image"><img src="images/partner/4.png"></div>
+                <div class="partners-content-image"><img src="images/partner/5.png"></div>
+                <div class="partners-content-image"><a href="associe-se.html"><img src="images/partner/6.png"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+
+        <div class="newsletter-content">
+            <form action="email.php" method="post" class="newsletter-form">
+
+                <div class="newsletter-title">
+                    <h1>Newsletter</h1>
+                    <h2>Cadastre seu e-mail e receba nossas novidades</h2>
+                </div>
+
+                <input class="form-control" type="text" name="email" id="email" placeholder="Email" required></input>
+                <button class="btn btn-red" type="submit">CADASTRAR</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="footer-section">
- <div class="footer-bottom">
+        <div class="footer-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <span><a href="termosecondicoes.html">Termos & Condições</a></span>
-                        <span>&copy; 2017 IBESVA / Desenvolvido por <a href="http://zambrotti.com" target="_blank">Zambrotti - Soluções em Informática</a></span>
+                        <span><a href="termosecondicoes.html">Termos & Condições</a></span><br>
+                        <span>&copy; 2019 IBESVA / Desenvolvido por <a href="http://zambrotti.com"
+                                target="_blank">Zambrotti - Soluções em Informática</a> / Novo Design por <a
+                                href="https://www.linkedin.com/in/guilhermebkel/" target="_blank">Guilherme
+                                Bromonschenkel</a></span>
                     </div>
                 </div>
             </div>
@@ -310,11 +331,14 @@ Fernanda Carvalho Barbosa<br><br>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
 
-   
+    <!-- Google Map -->
+
 
     <!-- Custom JS -->
     <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
+<!-- Novo Design feito por Guilherme Bromonschenkel -->
 <!-- Desenvolvido por ZAMBROTTI - Soluções em Informática / Cópia proíbida e protegida por lei. -->
+
 </html>

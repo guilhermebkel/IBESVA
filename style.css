@@ -103,12 +103,9 @@ input[type=text] {
 #collapse-navbar{
     display: none;
     margin-bottom: 0;
-    padding: 10px;
     background-color: white;
     border-width: 0;
-    height: 13vh;
-    z-index: 1; 
-    width: 100%;
+    padding: 10px;
 }
 #no-border{
     border-width: 0;

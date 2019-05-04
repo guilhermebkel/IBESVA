@@ -447,6 +447,10 @@ input[type=text] {
 .causes-card {
     display: flex; 
     padding: 0 40px 0 40px;
+    margin: auto auto
+}
+.causes-card p{
+    margin: 60px;
 }
 .causes-card-content {
     margin: auto auto; 

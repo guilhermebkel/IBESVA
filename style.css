@@ -519,6 +519,53 @@ input[type=text] {
     box-shadow: 0px 6px 6px 0px #E6E6E6;
     background-color: #E6E6E6;
 }
+/*========== Parteners Page =========*/
+#partners-page-mobile{
+    display: none;
+}
+#partners-page-web{
+    display: block;
+}
+.partners-page{
+    display: flex; 
+    background-color: white; 
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.partners-page-box{
+    display: inline; 
+    padding: 30px;
+}
+.partners-page-grid{
+    display: flex; 
+    margin-bottom: 10px;
+}
+.partners-page-grid img{
+    margin: auto auto; 
+    width: auto; 
+    height: 120px; 
+    margin-right: 10px;
+}
+.partners-page-grid p{
+    margin: auto auto; 
+    font-size: 12px;
+}
+.partners-page-button{
+    display: flex; 
+    margin: auto auto 50px auto; 
+    width: 350px; 
+    height: 100px; 
+    background-image: linear-gradient(to right ,#EF2727, #B10202); 
+    box-shadow: 0 6px 4px -6px rgb(100, 100, 100); 
+    border-radius: 15px; 
+    cursor: pointer;
+}
+.partners-page-button p{
+    margin: auto auto; 
+    font-weight: bold; 
+    color: white; 
+    font-size: 14px;
+}
 
 /* ==================================================================
   9.0 Newsletter

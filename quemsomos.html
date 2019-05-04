@@ -15,26 +15,6 @@
         gtag('config', 'UA-133762638-1');
     </script>
 
-    <!-- Information Transition-->
-    <script>
-        function info(action) {
-            if (action == 'next' || action == 'previous') {
-                var x = document.getElementsByClassName("information-slide");
-                x[0].style.display = "none";
-                x[1].style.display = "block";
-                x[1].style.animation = "fadeIn 1.5s";
-            }
-        }
-        function filo(action) {
-            if (action == 'previous' || action == 'next') {
-                var x = document.getElementsByClassName("information-slide");
-                x[1].style.display = "none";
-                x[0].style.display = "block";
-                x[0].style.animation = "fadeIn 1.5s";
-            }
-        }
-    </script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -326,6 +306,45 @@
     <script type="text/javascript" src="js/jquery.waypoints.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Information Transition Button-->
+    <script>
+        function info(action) {
+            if (action == 'next' || action == 'previous') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "none";
+                x[1].style.display = "block";
+                x[1].style.animation = "fadeIn 1.5s";
+            }
+        }
+        function filo(action) {
+            if (action == 'previous' || action == 'next') {
+                var x = document.getElementsByClassName("information-slide");
+                x[1].style.display = "none";
+                x[0].style.display = "block";
+                x[0].style.animation = "fadeIn 1.5s";
+            }
+        }
+    </script>
+
+    <!-- Information Transition Swipe-->
+    <script>
+        $(document).ready(function () {
+            $("#info").swiperight(function () {
+                info('previous');
+            });
+            $("#info").swipeleft(function () {
+                info('next');
+            });
+            $("#filo").swiperight(function () {
+                filo('previous');
+            });
+            $("#filo").swipeleft(function () {
+                filo('next');
+            });
+        });
+    </script>
 
     <!-- Google Map -->
 

@@ -15,100 +15,6 @@
         gtag('config', 'UA-133762638-1');
     </script>
 
-    <!-- Slider Transition -->
-    <script>
-        setInterval(() => {
-            var x = document.getElementsByClassName("slide");
-
-            if (x[0].style.display == "block") {
-                x[0].style.display = "none";
-                x[2].style.display = "none";
-                x[1].style.display = "block";
-                x[1].style.animation = "fadeIn 2.5s";
-            }
-            else if (x[1].style.display == "block") {
-                x[0].style.display = "none";
-                x[1].style.display = "none";
-                x[2].style.display = "block";
-                x[2].style.animation = "fadeIn 2.5s";
-            }
-            else if (x[2].style.display == "block") {
-                x[2].style.display = "none";
-                x[1].style.display = "none";
-                x[0].style.display = "block";
-                x[0].style.animation = "fadeIn 2.5s";
-            }
-
-        }, 7000)
-        function firstSlide(action) {
-            if (action == 'next') {
-                var x = document.getElementsByClassName("slide");
-                x[1].style.animation = "fadeIn 1s";
-                x[0].style.display = "none";
-                x[1].style.display = "block";
-            }
-            if (action == 'previous') {
-                var x = document.getElementsByClassName("slide");
-                x[0].style.display = "none";
-                x[1].style.display = "none";
-                x[2].style.display = "block";
-                x[2].style.animation = "fadeIn 1s";
-            }
-        }
-        function secondSlide(action) {
-            if (action == 'next') {
-                var x = document.getElementsByClassName("slide");
-                x[2].style.display = "block";
-                x[1].style.display = "none";
-                x[0].style.display = "none";
-                x[2].style.animation = "fadeIn 1s";
-            }
-            if (action == 'previous') {
-                var x = document.getElementsByClassName("slide");
-                x[0].style.display = "block";
-                x[1].style.display = "none";
-                x[2].style.display = "none";
-                x[0].style.animation = "fadeIn 1s";
-            }
-        }
-        function thirdSlide(action) {
-            if (action == 'next') {
-                var x = document.getElementsByClassName("slide");
-                x[0].style.display = "block";
-                x[1].style.display = "none";
-                x[2].style.display = "none";
-                x[0].style.animation = "fadeIn 1s";
-            }
-            if (action == 'previous') {
-                var x = document.getElementsByClassName("slide");
-                x[0].style.display = "none";
-                x[1].style.display = "block";
-                x[2].style.display = "none";
-                x[1].style.animation = "fadeIn 1s";
-            }
-        }
-    </script>
-
-    <!-- Information Transition-->
-    <script>
-        function info(action) {
-            if (action == 'next' || action == 'previous') {
-                var x = document.getElementsByClassName("information-slide");
-                x[0].style.display = "none";
-                x[1].style.display = "block";
-                x[1].style.animation = "fadeIn 1.5s";
-            }
-        }
-        function filo(action) {
-            if (action == 'previous' || action == 'next') {
-                var x = document.getElementsByClassName("information-slide");
-                x[1].style.display = "none";
-                x[0].style.display = "block";
-                x[0].style.animation = "fadeIn 1.5s";
-            }
-        }
-    </script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -324,7 +230,7 @@
 
     <!-- Information -->
     <div class="information-rolling">
-        <div class="information-slide">
+        <div class="information-slide" id="info">
             <div class="information-red">
                 <div class="arrow" onclick="info('previous')"><i class="arrow-left"></i></div>
                 <div class="information-text">
@@ -337,7 +243,7 @@
             </div>
         </div>
 
-        <div class="information-slide" style="display: none">
+        <div class="information-slide" style="display: none" id="filo">
             <div class="information-green">
                 <div class="arrow" onclick="filo('previous')"><i class="arrow-left"></i></div>
                 <div class="information-text">
@@ -460,6 +366,143 @@
     <script type="text/javascript" src="js/jquery.waypoints.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Slider Transition Button -->
+    <script>
+        setInterval(() => {
+            var x = document.getElementsByClassName("slide");
+
+            if (x[0].style.display == "block") {
+                x[0].style.display = "none";
+                x[2].style.display = "none";
+                x[1].style.display = "block";
+                x[1].style.animation = "fadeIn 2.5s";
+            }
+            else if (x[1].style.display == "block") {
+                x[0].style.display = "none";
+                x[1].style.display = "none";
+                x[2].style.display = "block";
+                x[2].style.animation = "fadeIn 2.5s";
+            }
+            else if (x[2].style.display == "block") {
+                x[2].style.display = "none";
+                x[1].style.display = "none";
+                x[0].style.display = "block";
+                x[0].style.animation = "fadeIn 2.5s";
+            }
+
+        }, 7000)
+        function firstSlide(action) {
+            if (action == 'next') {
+                var x = document.getElementsByClassName("slide");
+                x[1].style.animation = "fadeIn 1s";
+                x[0].style.display = "none";
+                x[1].style.display = "block";
+            }
+            if (action == 'previous') {
+                var x = document.getElementsByClassName("slide");
+                x[0].style.display = "none";
+                x[1].style.display = "none";
+                x[2].style.display = "block";
+                x[2].style.animation = "fadeIn 1s";
+            }
+        }
+        function secondSlide(action) {
+            if (action == 'next') {
+                var x = document.getElementsByClassName("slide");
+                x[2].style.display = "block";
+                x[1].style.display = "none";
+                x[0].style.display = "none";
+                x[2].style.animation = "fadeIn 1s";
+            }
+            if (action == 'previous') {
+                var x = document.getElementsByClassName("slide");
+                x[0].style.display = "block";
+                x[1].style.display = "none";
+                x[2].style.display = "none";
+                x[0].style.animation = "fadeIn 1s";
+            }
+        }
+        function thirdSlide(action) {
+            if (action == 'next') {
+                var x = document.getElementsByClassName("slide");
+                x[0].style.display = "block";
+                x[1].style.display = "none";
+                x[2].style.display = "none";
+                x[0].style.animation = "fadeIn 1s";
+            }
+            if (action == 'previous') {
+                var x = document.getElementsByClassName("slide");
+                x[0].style.display = "none";
+                x[1].style.display = "block";
+                x[2].style.display = "none";
+                x[1].style.animation = "fadeIn 1s";
+            }
+        }
+    </script>
+
+    <!-- Slider Transition Swipe -->
+    <script>
+        $(document).ready(function () {
+            $("#slide-1").swiperight(function () {
+                firstSlide('previous');
+            });
+            $("#slide-1").swipeleft(function () {
+                firstSlide('next');
+            });
+            $("#slide-2").swiperight(function () {
+                secondSlide('previous');
+            });
+            $("#slide-2").swipeleft(function () {
+                secondSlide('next');
+            });
+            $("#slide-3").swiperight(function () {
+                thirdSlide('previous');
+            });
+            $("#slide-3").swipeleft(function () {
+                thirdSlide('next');
+            });
+        });
+    </script>
+
+    <!-- Information Transition Button-->
+    <script>
+        function info(action) {
+            if (action == 'next' || action == 'previous') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "none";
+                x[1].style.display = "block";
+                x[1].style.animation = "fadeIn 1.5s";
+            }
+        }
+        function filo(action) {
+            if (action == 'previous' || action == 'next') {
+                var x = document.getElementsByClassName("information-slide");
+                x[1].style.display = "none";
+                x[0].style.display = "block";
+                x[0].style.animation = "fadeIn 1.5s";
+            }
+        }
+    </script>
+
+    <!-- Information Transition Swipe-->
+    <script>
+        $(document).ready(function () {
+            $("#info").swiperight(function () {
+                info('previous');
+            });
+            $("#info").swipeleft(function () {
+                info('next');
+            });
+            $("#filo").swiperight(function () {
+                filo('previous');
+            });
+            $("#filo").swipeleft(function () {
+                filo('next');
+            });
+        });
+    </script>
 
     <!-- Google Map -->
 

@@ -31,6 +31,94 @@
         display: none;
     }
 
+    /* ========= Slider =============*/
+    .slider {
+        height: 60vh; 
+        display: flex;
+        background-color: #E6E6E6; 
+        margin-top: 0;
+        width: 100vw;
+    }
+    .slider-left-side-content{
+        height: auto; 
+        width: 100vw; 
+        text-align: center;
+        padding-bottom: 50px;
+        margin: auto auto;
+    }
+    .slider-title{
+        font-size: 6vw;
+        font-weight: 500;
+        padding-bottom: 15px;
+        color: #2E2E2E;
+        margin: auto auto;
+    }
+    .slider-description{
+        font-size: 3vw;
+        font-weight: 500;
+        line-height: 15px;
+        padding-bottom: 20px;
+        color: #2E2E2E;
+        margin: auto auto;
+        width: 80%;
+    }
+    .slider-img{
+        display: none;
+    }
+
+    /* ========= Sidebar =============*/
+    .sidebar{
+        background-color: white; 
+        height: 20vh; 
+        text-align: center; 
+        display: flex;
+    }
+    .sidebar-item-content-img{
+        height: 4vw; 
+        width: auto; 
+        margin: auto auto;
+        margin-right: 5px;
+    }
+    .sidebar-item-content-number-red{
+        margin: auto auto; 
+        margin-left: 0;
+        font-weight: bold;
+        color: #FF0000;
+        font-size: 7vw;
+        line-height: 30px;
+    }
+    .sidebar-item-content-number-green{
+        margin: auto auto; 
+        font-weight: bold;
+        margin-left: 0;
+        color: #18BF1E;
+        font-size: 7vw;
+        line-height: 30px;
+    }
+    .sidebar-description{
+        font-size: 3vw;
+        font-weight: 500;
+        line-height: 15px;
+        color: #2E2E2E;
+        margin: 7px auto auto auto;
+    }
+
+    /* ========= Information ===========*/
+    .information-text h1 {
+        text-shadow: 0px 3px 6px #00000024; 
+        padding-bottom: 10px; 
+        color: white; 
+        font-size: 6vw; 
+        font-weight: normal;
+    }
+    .information-text p {
+        text-shadow: 0px 1px 6px #00000024; 
+        padding-bottom: 10px; 
+        color: white; 
+        font-size: 3.5vw; 
+        font-weight: initial;    
+    }
+
     /* ========= Causes =============*/
     .causes {
         width: 100%; 
@@ -73,98 +161,8 @@
         padding-bottom: 10px; 
         color: #707070; 
         font-size: 3vw; 
-        font-weight: lighter
-    }    
-
-    /* ========= Slider =============*/
-    .slider {
-        height: 63vh; 
-        display: flex;
-        margin-top: 68px;
-    }
-    .slider-left-side{
-        height: auto; 
-        width: 100vw; 
-        background-color: #E6E6E6; 
-        display: flex;
-    }
-    .slider-left-side-content{
-        height: auto; 
-        width: 100vw; 
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .slider-title{
-        font-size: 6vw;
-        font-weight: 500;
-        padding-bottom: 15px;
-        color: #2E2E2E;
-        margin: auto auto;
-    }
-    .slider-description{
-        font-size: 3vw;
-        font-weight: 500;
-        line-height: 15px;
-        padding-bottom: 20px;
-        color: #2E2E2E;
-        margin: auto auto;
-    }
-    .slider-img{
-        display: none;
-    }
-
-    /* ========= Information ===========*/
-    .information-text h1 {
-        text-shadow: 0px 3px 6px #00000024; 
-        padding-bottom: 10px; 
-        color: white; 
-        font-size: 6vw; 
         font-weight: normal;
-    }
-    .information-text p {
-        text-shadow: 0px 1px 6px #00000024; 
-        padding-bottom: 10px; 
-        color: white; 
-        font-size: 3.5vw; 
-        font-weight: initial;    
-    }
-
-    /* ========= Sidebar =============*/
-    .sidebar{
-        background-color: white; 
-        height: 25vh; 
-        text-align: center; 
-        display: flex;
-    }
-    .sidebar-item-content-img{
-        height: 4vw; 
-        width: auto; 
-        margin: auto auto;
-        margin-right: 5px;
-    }
-    .sidebar-item-content-number-red{
-        margin: auto auto; 
-        margin-left: 0;
-        font-weight: bold;
-        color: #FF0000;
-        font-size: 7vw;
-        line-height: 30px;
-    }
-    .sidebar-item-content-number-green{
-        margin: auto auto; 
-        font-weight: bold;
-        margin-left: 0;
-        color: #18BF1E;
-        font-size: 7vw;
-        line-height: 30px;
-    }
-    .sidebar-description{
-        font-size: 3vw;
-        font-weight: 500;
-        line-height: 15px;
-        color: #2E2E2E;
-        margin: 7px auto auto auto;
-    }
+    }    
 
     /* ========= Partners =============*/
     .partners h1{
@@ -213,7 +211,7 @@
         font-weight: bold;
     }
     .newsletter-title h2{
-        font-size: 2.5vw; 
+        font-size: 3vw; 
         color: #707070; 
         margin-top: 0px;
     }

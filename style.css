@@ -10,58 +10,105 @@ Version: 1.0.0
  * Table of Contents:
  *
 * 1.0 - General styles
-* 2.0 - Common styles
-* 3.0 - Header Styles
-* 4.0 - Home Slider
-* 5.0 - Fun fact Section
-* 6.0 - Equal Column Height Style
-* 7.0 - Home Gallery Section
-* 8.0 - Clients Section
-* 9.0 - Call to Action Section
-* 10.0 - Client Testimonial Section
-* 11.0 - Newsletter Signup
-* 12.0 - Page Title Section
-* 13.0 - Breadcrumb Section
-* 14.0 - Page Accordian
-* 15.0 - Page Navigation
-* 16.0 - About Page
-* 17.0 - Cause Details
-* 18.0 - Event Page
-* 19.0 - Event Details
-* 20.0 - Team Page
-* 21.0 - Partner Page
-* 22.0 - FAQ Page
-* 23.0 - Gallery Page
-* 24.0 - Contact Page
-* 25.0 - Register Page
-* 26.0 - 404 Page
-* 27.0 - Home Feature Blog
-* 28.0 - Blog Page
-* 29.0 - Single Blog
-* 30.0 - Blog Comment
-* 31.0 - Widget Section
-* 32.0 - Archive Page
-* 33.0 - Shop Page
-* 34.0 - Cart Page
-* 35.0 - Empty Cart Page
-* 36.0 - Checkout Page
-* 37.0 - Donation Page
-* 38.0 - Footer Section
-* 39.0 - Scroll To Top
-* 40.0 - Preloader
+* 2.0 - Collapse Navbar
+* 3.0 - Original Navbar
+* 4.0 - Slider
+* 5.0 - Sidebar
+* 6.0 - Informations
+* 7.0 - Causes
+* 8.0 - Partners
+* 9.0 - Newsletter
+* 10.0 - Footer
 ================================================================== */
 
-/* Collapse Navbar */
+/* ==================================================================
+  1.0 General styles
+================================================================== */
+html,
+html a {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-smoothing: antialiased !important;
+}
+html {
+    overflow-x: hidden !important;
+}
+body {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333333;
+}
+p {
+    font-size: 14px;
+    line-height: 22px;
+}
+a {
+    color: #ff0000;
+}
+a:focus,
+a:hover,
+a:active,
+:focus {
+    outline: none;
+    text-decoration: none;
+}
+a,
+a:after,
+a:before,
+.btn {
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+img {
+    max-width: 100%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.no-pad {
+    padding: 0;
+}
+.bg {
+    background: #ff0000;
+}
+img.left {
+    margin: 0 15px 15px 0;
+}
+img.right {
+    margin: 0 0 15px 15px;
+}
+input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* ==================================================================
+  2.0 Collapse Navbar
+================================================================== */
 #collapse-navbar{
     display: none;
     margin-bottom: 0;
     padding: 10px;
     background-color: white;
     border-width: 0;
-    position: fixed; 
+    height: 13vh;
     z-index: 1; 
-    width: 100vw;
-    height: 13.2vh;
+    width: 100%;
 }
 #no-border{
     border-width: 0;
@@ -78,7 +125,9 @@ Version: 1.0.0
     background-color: red;
 }
 
-/* Navbar */
+/* ==================================================================
+  3.0 Original Navbar
+================================================================== */
 .made-navbar {
     height: 11vh;
     width: 100%; 
@@ -126,34 +175,9 @@ Version: 1.0.0
     color: white; 
 }
 
-/* Slider Button */
-.btn {
-    background: red;
-    border: 0 none;
-    border-radius: 2px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 11px;
-    font-weight: bolder;
-    line-height: 14px;
-    padding: 10px 15px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-}
-.btn-red {
-    background-image: linear-gradient(to right ,#FF0000, #B10202);
-    box-shadow: 0 6px 4px -6px #8D8D8D;
-    border-radius: 10px;
-}
-.btn-red:hover {
-    color: red;
-    background: white;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-
-/* Slider */
+/* ==================================================================
+  4.0 Slider
+================================================================== */
 .slider {
     height: 65vh; 
     display: flex;
@@ -231,8 +255,36 @@ Version: 1.0.0
     border-radius: 100%; 
     margin: 0 5px 0 0; 
 }
+/* Slider Button */
+.btn {
+    background: red;
+    border: 0 none;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bolder;
+    line-height: 14px;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+.btn-red {
+    background-image: linear-gradient(to right ,#FF0000, #B10202);
+    box-shadow: 0 6px 4px -6px #8D8D8D;
+    border-radius: 10px;
+}
+.btn-red:hover {
+    color: red;
+    background: white;
+    -webkit-transition: all 0.2s ease-in-out;
+}
 
-/* Sidebar */
+/* ==================================================================
+  5.0 Sidebar
+================================================================== */
 .sidebar{
     background-color: white; 
     height: 24vh; 
@@ -282,17 +334,19 @@ Version: 1.0.0
     margin: 7px auto auto auto;
 }
 
-/* Informations */
+/* ==================================================================
+  6.0 Infornations
+================================================================== */
 .information-red{
     display: flex; 
-    width: 100%; 
+    width: 100vw; 
     height: auto; 
     background-image: linear-gradient(to right ,#EF2727, #B10202);
     box-shadow: 0 6px 4px -6px rgb(100, 100, 100);
 }
 .information-green{
     display: flex; 
-    width: 100%; 
+    width: 100vw; 
     height: auto; 
     background-image: linear-gradient(to right ,#60BC24, #2B6D01);
     box-shadow: 0 6px 4px -6px rgb(100, 100, 100);
@@ -326,12 +380,11 @@ Version: 1.0.0
     width: 100%;
     flex-shrink: 0;
     height: 100%;
-    
 }
 .arrow{
     cursor: pointer; 
     margin: auto auto; 
-    padding: 15px; 
+    padding: 15px 15px; 
     display: flex;
     background: transparent;
 }
@@ -360,7 +413,9 @@ Version: 1.0.0
     height: 20px;
 }
 
-/* Causes */
+/* ==================================================================
+  7.0 Causes
+================================================================== */
 .causes {
     width: 100%; 
     height: 100%; 
@@ -413,7 +468,9 @@ Version: 1.0.0
     font-weight: lighter
 }
 
-/* Partners */
+/* ==================================================================
+  8.0 Partners
+================================================================== */
 .partners { 
     width: 100%; 
     height: auto;
@@ -443,7 +500,9 @@ Version: 1.0.0
     background-color: #E6E6E6;
 }
 
-/* Newsletter */
+/* ==================================================================
+  9.0 Newsletter
+================================================================== */
 .newsletter {
     display: flex; 
     width: 100%; 
@@ -486,84 +545,7 @@ Version: 1.0.0
 }
 
 /* ==================================================================
-  1.0 General styles
-================================================================== */
-
-html,
-html a {
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    font-smoothing: antialiased !important;
-}
-html {
-    overflow-x: hidden !important;
-}
-body {
-    color: #555;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 22px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #333333;
-}
-p {
-    font-size: 14px;
-    line-height: 22px;
-}
-a {
-    color: #ff0000;
-}
-a:focus,
-a:hover,
-a:active,
-:focus {
-    outline: none;
-    text-decoration: none;
-}
-a,
-a:after,
-a:before,
-.btn {
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
-    -o-transition: all 0.25s linear;
-    transition: all 0.25s linear;
-}
-img {
-    max-width: 100%;
-}
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
-.no-pad {
-    padding: 0;
-}
-.bg {
-    background: #ff0000;
-}
-img.left {
-    margin: 0 15px 15px 0;
-}
-img.right {
-    margin: 0 0 15px 15px;
-}
-input[type=text] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-/* ==================================================================
-  38.0 Footer Section
+  10.0 Footer
 ================================================================== */
 
 .footer-section {
@@ -642,7 +624,6 @@ input[type=text] {
 .footer-bottom span a:hover {
     color: #ff0000;
 }
-
 /* Scroll To Top */
 #scrollUp {
     background: rgba(255, 52, 80, 1);

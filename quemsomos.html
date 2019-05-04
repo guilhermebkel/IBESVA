@@ -160,7 +160,7 @@
 
     <!-- Information -->
     <div class="information-rolling">
-        <div class="information-slide">
+        <div class="information-slide" id="info">
             <div class="information-red">
                 <div class="arrow" onclick="info('previous')"><i class="arrow-left"></i></div>
                 <div class="information-text">
@@ -192,7 +192,7 @@
             </div>
         </div>
 
-        <div class="information-slide" style="display: none">
+        <div class="information-slide" id="filo" style="display: none">
             <div class="information-green">
                 <div class="arrow" onclick="filo('previous')"><i class="arrow-left"></i></div>
                 <div class="information-text">
@@ -306,7 +306,7 @@
     <script type="text/javascript" src="js/jquery.waypoints.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
 
     <!-- Information Transition Button-->
     <script>
@@ -332,16 +332,16 @@
     <script>
         $(document).ready(function () {
             $("#info").swiperight(function () {
-                info('previous');
-            });
-            $("#info").swipeleft(function () {
                 info('next');
             });
+            $("#info").swipeleft(function () {
+                info('previous');
+            });
             $("#filo").swiperight(function () {
-                filo('previous');
+                filo('next');
             });
             $("#filo").swipeleft(function () {
-                filo('next');
+                filo('previous');
             });
         });
     </script>

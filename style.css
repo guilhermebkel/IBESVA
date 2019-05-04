@@ -32,12 +32,15 @@ html a {
 }
 html {
     overflow-x: hidden !important;
+    margin: 0;
 }
 body {
     color: #555;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 22px;
+    margin: 0;
+    overflow-x: hidden !important;
 }
 h1,
 h2,
@@ -96,6 +99,10 @@ input[type=text] {
     -moz-appearance: none;
     appearance: none;
 }
+* {
+    margin:0px;
+    padding:0px;
+}
 
 /* ==================================================================
   2.0 Collapse Navbar
@@ -106,7 +113,6 @@ input[type=text] {
     background-color: white;
     border-width: 0;
     padding: 10px;
-    height: 14vh;
 }
 #no-border{
     border-width: 0;
@@ -333,7 +339,7 @@ input[type=text] {
 }
 
 /* ==================================================================
-  6.0 Infornations
+  6.0 Informations
 ================================================================== */
 .information-red{
     display: flex; 

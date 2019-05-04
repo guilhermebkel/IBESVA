@@ -121,7 +121,7 @@
 
     /* ========= Causes =============*/
     .causes {
-        width: 100%; 
+        width: 100vw; 
         height: 100%; 
         background-color: #E6E6E6;
         display: flex;
@@ -139,13 +139,13 @@
     }
     .causes-card-content img {
         height: auto; 
-        width: 80vw;
+        width: 100%;
         margin-top: 50px;
     }
     .causes-card-content-info {
         display: block; 
         text-align: center; 
-        width: 80vw;
+        width: 100%;
         height: auto; 
         background-color: white;
     }

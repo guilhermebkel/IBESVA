@@ -183,6 +183,10 @@ input[type=text] {
     background-color: red; 
     color: white; 
 }
+#donation-button-active{
+    background-color: red;
+    color: white;
+}
 
 /* ==================================================================
   4.0 Slider

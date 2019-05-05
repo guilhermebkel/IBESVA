@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
+<!-- Novo Design feito por Guilherme Bromonschenkel -->
 <!-- Desenvolvido por ZAMBROTTI - Soluções em Informática / Cópia proíbida e protegida por lei. -->
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114999867-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-114999867-1');
-</script>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133762638-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133762638-1');
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="O Instituto de Beneficência Somos Valentes é uma associação beneficente sem fins lucrativos que tem como objetivo o planejamento de ações na área de educação e saúde visando a combater a desigualdade social.">
-    <meta name="author" content="Zambrotti - Soluções em Informática">
+    <meta name="description"
+        content="O Instituto de Beneficência Somos Valentes é uma associação beneficente sem fins lucrativos que tem como objetivo o planejamento de ações na área de educação e saúde visando a combater a desigualdade social.">
+    <meta name="author" content="Zambrotti - Soluções em Informática / Guilherme Bromonschenkel">
     <meta name="keywords" content="IBESVA, Instituto de Beneficência Somos Valentes, filantropia, filantrópica">
     <title>IBESVA - Instituto de Beneficência Somos Valentes</title>
 
@@ -44,140 +46,126 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="space.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
-    
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
     <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
-    <!-- header -->
-       <div id="header--fixed" class="header">
-        <div class="nav-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-5 col-lg-4">
-                        <div class="phone">
-                            <i class="fa fa-volume-control-phone"></i>21 2722-1892
-                        </div>
-                        <div class="email">
-                            <i class="fa fa-envelope"></i>contato@ibesva.com
-                        </div>
-                        <a href="doacao.html" class="btn btn-red">Doações</a>
-                    </div>
-                    <div class="col-md-3 col-lg-4 ">
-                      
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="social">
-                            <a href="https://www.facebook.com/Ibesva/" target="_blank"> <i class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/ibesva/" target="_blank"> <i class="fa fa-instagram"></i></a>
-                            <a href="https://twitter.com/ibesva1" target="_blank"> <i class="fa fa-twitter"></i></a>
-                            <a href="skype:Instituto Somos Valentes?chat" > <i class="fa fa-skype"></i></a>
-                            <a href="https://www.youtube.com/channel/UCTy3Cvu4SE8czmW8fIi3gtA" target="_blank"> <i class="fa fa-youtube"></i></a>
-							<a href="http://api.whatsapp.com/send?1=pt_BR&phone=552137413455"> <i class="fa fa-whatsapp"></i></a>
-                        </div>
-                        <a class="join-top" href="contato.html"><i class="fa fa-user-circle"></i>Seja um Voluntário</a>
-                       
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="main-nav" class="main-nav">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
-                            <span class="sr-only">Menu</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img class="retina" src="images/logo.png" alt="IBESVA"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="main-navbar">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="quemsomos.html">Quem Somos</a></li>
-                            <li><a href="parceiros.html">Parceiros</a></li>
-                            <li><a href="acompanhe.html">Acompanhe</a></li>
-                            <li><a href="associe-se.html">Associe-se</a></li>                          
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right hidden-xs">
-                            
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+    <!-- Original Navbar -->
+    <div id="original-navbar" class="made-navbar">
+        <a href="index.html"><img class="made-navbar-logo" src="images/logo.png" alt="IBESVA"></a>
+        <a class="made-navbar-text" href="index.html">HOME</a>
+        <a class="made-navbar-text" href="quemsomos.html">QUEM SOMOS</a>
+        <a class="made-navbar-text" href="parceiros.html">PARCEIROS</a>
+        <a class="made-navbar-text" href="acompanhe.html">ACOMPANHE</a>
+        <a id="made-navbar-active" class="made-navbar-text" href="associe-se.html">ASSOCIE-SE</a>
+        <a class="made-navbar-text" href="contato.html">CONTATO</a>
+        <a href="doacao.html">
+            <div class="donation-button">DOAÇÕES</div>
+        </a>
     </div>
 
-    <!-- Page title -->
-    <div class="page-title-section">
-        <div class="page-title-wrap">
-            <div class="page-title-overlay"></div>
-            <div class="page-title-info">
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Termos e Condições</li>
-                </ol>
-                <h1 class="page-title">Termos & Condições</h1>
+    <!-- Collapse Navbar -->
+    <nav id="collapse-navbar" class="navbar navbar-inverse">
+        <div class="container-fluid" id="no-border">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    id="no-border">
+                    <span class="icon-bar" id="collapse-icon"></span>
+                    <span class="icon-bar" id="collapse-icon"></span>
+                    <span class="icon-bar" id="collapse-icon"></span>
+                </button>
+                <a href="index.html"><img class="made-navbar-logo" src="images/logo.png" alt="IBESVA"></a>
+            </div>
+            <div class="collapse navbar-collapse no-border" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="made-navbar-text" href="index.html">HOME</a></li>
+                    <li><a class="made-navbar-text" href="quemsomos.html">QUEM SOMOS</a></li>
+                    <li><a class="made-navbar-text" href="parceiros.html">PARCEIROS</a></li>
+                    <li><a class="made-navbar-text" href="acompanhe.html">ACOMPANHE</a></li>
+                    <li><a id="active" class="made-navbar-text" href="associe-se.html">ASSOCIE-SE</a></li>
+                    <li><a class="made-navbar-text" href="contato.html">CONTATO</a></li>
+                    <li><a class="made-navbar-text" href="doacao.html">DOAÇÕES</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <!-- Event section -->
-    <div class="event-section mg-top-100 mg-bottom-50">
-        <div class="container">
-            <div class="row">
-                <div id="event-sticky" class="col-sm-4 col-md-3">
-                    <div class="faq-nav hidden-xs">
-                        <ul>
-                            <li><a href="quemsomos.html"><i class="fa fa-chain"></i>Sobre Nós</a></li>
-                            <li><a href="parceiros.html"><i class="fa fa-chain"></i>Nossos Parceiros</a></li>
-                            <li><a href="associe-se.html"><i class="fa fa-chain"></i>Seja um Parceiro</a></li>
-                            <li><a href="contato.html"><i class="fa fa-chain"></i>Fale Conosco</a></li>
-                            <li><a href="doacao.html"><i class="fa fa-chain"></i>Faça uma Doação</a></li>
-                        </ul>
-                    </div>
-                    <div class="widget widget-volentaree">
-                        <h2 class="wv-title">Seja um Voluntário</h2>
-                        <p>Junte-se à nós e venha fazer a diferença!</p>
-                        <a class="btn btn-red btn-red-bg" href="contato.html">VOLUNTARIAR-SE</a>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider-rolling">
+        <div class="slide" id="slide-1" style="display: block;">
+            <div class="slider">
+                <div class="slider-left-side">
+                    <div class="slider-left-side-center">
+                        <div class="slider-left-side-content">
+                            <h2 class="slider-title">Termos e Condições</h2>
+                            <p class="slider-description">
+                                Logo abaixo estão os termos e condições do Instituto de Beneficência Somos Valentes.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-8 col-md-9 mg-bottom-50">
-                    <div id="details" class="event-details">
-                       <div class="event-summary">
-                            <h3 class="event-title">Termo de aceite:</h3>
-                            <p>Como associado do Instituto de Beneficência Somos Valentes - IBESVA, estou ciente e de acordo que a instituição tem por missão a elaboração e execução de projetos que visam à redução das desigualdades sociais e econômicas do nosso país, e que a anuidade paga é uma contribuição do associado para a manutenção operacional da organização e tem natureza jurídica de DOAÇÃO. Esta anuidade caracteriza-se como uma liberalidade (Art. 540 do Código Civil - Lei 10406/02), assumida no ato de sua afiliação. Também coloco-me em submissão ao Estatuto Social e ao Regimento Interno do IBESVA.
-                            <br><br>
-                            <br><br>
-                           Como contrapartida, o Instituto dá acesso aos dados técnicos e estatísticos por ele gerados ou levantados em meios impressos e digitais, descontos na comercialização de seus produtos, direito à votar e ser votado nas Assembleias Gerais convocadas, emissão de carteirinha de associado e a possibilidade de participação na organização dos eventos realizados pelo IBESVA.
-                            <br><br><br><br>
-                           O cadastramento de sócios pode ser feito por pessoa jurídica (neste caso, os benefícios se estendem a todos os funcionários e voluntários da instituição) ou por pessoa física. A associação, uma vez efetuada e paga, terá validade de um ano e não é reembolsável, mesmo em caso de desistência.</p>
-                            
-                        </div>
-                       
-                    </div>
+                <div class="slider-right-side"><img class="slider-img" alt="slide" src="images/slider/slider-2.jpg">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- footer -->
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <div class="sidebar-item-content" id="sidebar-align">
+                <img class="sidebar-item-content-img" id="sidebar-align" src="images/icons/associe/sidebar1.png">
+            </div>
+            <div>
+                <p class="sidebar-description">??????</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms -->
+    <div class="causes">
+        <h1>Apresentação</h1>
+    </div>
+    <div class="causes" style="display: flex">
+        <div class="causes-card">
+            <p>Como associado do Instituto de Beneficência Somos Valentes - IBESVA, estou ciente e de acordo que a
+                instituição tem
+                por missão a elaboração e execução de projetos que visam à redução das desigualdades sociais e
+                econômicas do nosso país,
+                e que a anuidade paga é uma contribuição do associado para a manutenção operacional da organização e tem
+                natureza jurídica de
+                DOAÇÃO. Esta anuidade caracteriza-se como uma liberalidade (Art. 540 do Código Civil - Lei 10406/02),
+                assumida no ato de sua
+                afiliação. Também coloco-me em submissão ao Estatuto Social e ao Regimento Interno do IBESVA.<br><br>
+
+                Como contrapartida, o Instituto dá acesso aos dados técnicos e estatísticos por ele gerados ou
+                levantados em meios impressos e digitais, descontos na comercialização de seus produtos, direito à votar
+                e ser votado nas Assembleias Gerais convocadas, emissão de carteirinha de associado e a possibilidade de
+                participação na organização dos eventos realizados pelo IBESVA.<br><br>
+
+                O cadastramento de sócios pode ser feito por pessoa jurídica (neste caso, os benefícios se estendem a
+                todos os funcionários e voluntários da instituição) ou por pessoa física. A associação, uma vez efetuada
+                e paga, terá validade de um ano e não é reembolsável, mesmo em caso de desistência.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="footer-section">
- <div class="footer-bottom">
+        <div class="footer-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <span><a href="termosecondicoes.html">Termos & Condições</a></span>
-                        <span>&copy; 2017 IBESVA / Desenvolvido por <a href="http://zambrotti.com" target="_blank">Zambrotti - Soluções em Informática</a></span>
+                        <span><a href="termosecondicoes.html">Termos & Condições</a></span><br>
+                        <span>&copy; 2019 IBESVA / Desenvolvido por <a href="http://zambrotti.com"
+                                target="_blank">Zambrotti - Soluções em Informática</a> / Novo Design por <a
+                                href="https://www.linkedin.com/in/guilhermebkel/" target="_blank">Guilherme
+                                Bromonschenkel</a></span>
                     </div>
                 </div>
             </div>
@@ -202,11 +190,14 @@
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
 
-  
+    <!-- Google Map -->
+
 
     <!-- Custom JS -->
     <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
+<!-- Novo Design feito por Guilherme Bromonschenkel -->
 <!-- Desenvolvido por ZAMBROTTI - Soluções em Informática / Cópia proíbida e protegida por lei. -->
+
 </html>

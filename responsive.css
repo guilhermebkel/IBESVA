@@ -318,4 +318,39 @@
         height: 500px;
         margin: auto auto;
     }
+
+    /* ======== Contact ========== */
+    .contact-container{
+        width: 100vw; 
+        height: auto; 
+        display: inline; 
+        margin-bottom: 100px;
+    }
+    .adress-container{
+        width: 100vw; 
+        height: auto; 
+        background-color:#dfdfdf; 
+        margin: 0 auto; 
+        display: flex;
+    }
+    .social-container{
+        width: 100vw; 
+        height: auto; 
+        margin: 0 auto; 
+        display: inline
+    }
+    .adress-container p{
+        color: #333333; 
+        text-align: center; 
+        margin: auto auto; 
+        padding: 20px;
+    }
+    .contact-maps-container{
+        display: inline;
+    }
+    .contact-form form{
+        margin: auto auto;
+        width: 90%;
+        padding: 20px 0 20px 0;
+    }
 }

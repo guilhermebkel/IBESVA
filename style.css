@@ -23,6 +23,7 @@ Version: 1.0.0
 * 12.0 - Form
 * 13.0 - Social Container
 * 14.0 - Contact Info
+* 15.0 - Donation
 ================================================================== */
 
 /* ==================================================================
@@ -854,4 +855,48 @@ iframe{
 }
 .contact-form form textarea{
     resize: vertical;
+}
+
+/* ==================================================================
+  14.0 Donation
+================================================================== */
+.help{
+    display: flex; 
+    background-color: #E6E6E6;
+    padding-bottom: 50px;
+}
+.help h1{
+    text-align: center; 
+    color: #2E2E2E; 
+    font-size: 30px; 
+    font-weight: normal;
+    margin: 0 auto 0 auto;
+    padding-top: 100px;
+}
+.help-first-container{
+    background-color: white; 
+    width: 270px; 
+    display: inline; 
+    margin: auto 100px auto auto;
+}
+.help-second-container{
+    background-color: white; 
+    width: 270px; 
+    display: inline; 
+    margin: auto auto auto 100px;
+}
+.help-container-img{
+    width: 270px;
+}
+.help-container-text{
+    display: flex; 
+    height: auto;
+}
+.help-container-text p{
+    color: #2E2E2E; 
+    font-weight: bold; 
+    font-size: 12px; 
+    margin: auto auto; 
+    text-align: center; 
+    padding: 10px;
 }

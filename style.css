@@ -837,3 +837,18 @@ iframe{
     height: 40px; 
     margin: auto auto;
 }
+.contact-maps-container{
+    display: flex;
+}
+.contact-form{
+    width: 100%; 
+    display: flex; 
+}
+.contact-form form{
+    margin: auto auto;
+    width: 60%;
+    padding: 10px 0 10px 0;
+}
+.contact-form form textarea{
+    resize: vertical;
+}

@@ -860,6 +860,29 @@ iframe{
 /* ==================================================================
   14.0 Donation
 ================================================================== */
+.donation{
+    display:flex; 
+    height: 150px; 
+    margin-bottom: 50px;
+}
+.donation-container{
+    height: 100%; 
+    width: 300px; 
+    margin: auto auto; 
+    display: flex;
+}
+.donation-container img{
+    width: 80px; 
+    height: 80px; 
+    margin: auto auto;
+}
+.donation-container p{
+    margin: auto auto; 
+    color: #2E2E2E;
+}
+.donation-container form{
+    margin: auto auto;
+}
 .help{
     display: flex; 
     background-color: #E6E6E6;
@@ -900,3 +923,4 @@ iframe{
     text-align: center; 
     padding: 10px;
 }
+

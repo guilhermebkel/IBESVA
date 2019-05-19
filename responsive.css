@@ -353,4 +353,46 @@
         width: 90%;
         padding: 20px 0 20px 0;
     }
+
+    /* ======== Donation ========== */
+    .donation{
+        display: inline; 
+        height: 150px; 
+        margin-bottom: 50px;
+    }
+    .donation-container{
+        height: 100%; 
+        width: 100%; 
+        margin: auto auto; 
+        display: flex;
+        padding: 20px;
+    }
+    .help{
+        display: inline; 
+        background-color: #E6E6E6;
+        padding-bottom: 50px;
+    }
+    .help h1{
+        text-align: center; 
+        color: #2E2E2E; 
+        font-size: 6vw; 
+        font-weight: normal;
+        margin: 0 auto 0 auto;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .help-first-container{
+        background-color: white;  
+        display: inline; 
+        margin: auto auto;
+    }
+    .help-second-container{
+        background-color: white; 
+        display: inline; 
+        margin: auto auto;
+    }
+    .help-container-img{
+        width: 100vw;
+        margin: auto auto;
+    }
 }

@@ -353,6 +353,20 @@
         display: flex;
         padding: 20px;
     }
+    .donation-container img{
+        width: 20vw; 
+        height: 20vw; 
+        margin: auto auto;
+    }
+    .donation-container p{
+        margin: auto auto; 
+        color: #2E2E2E;
+        font-size: 4vw;
+    }
+    .donation-container form input{
+        height: auto;
+        width: 60vw;
+    }
     .help{
         display: inline; 
         background-color: #E6E6E6;
@@ -380,5 +394,13 @@
     .help-container-img{
         width: 100vw;
         margin: auto auto;
+    }
+    .help-container-text p{
+        color: #2E2E2E; 
+        font-weight: bold; 
+        font-size: 3.5vw; 
+        margin: auto auto; 
+        text-align: center; 
+        padding: 10px;
     }
 }

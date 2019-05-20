@@ -527,7 +527,7 @@ input[type=text] {
     box-shadow: 0px 6px 6px 0px #E6E6E6;
     background-color: #E6E6E6;
 }
-/*========== Parteners Page =========*/
+/*========== Partners Page =========*/
 #partners-page-mobile{
     display: none;
 }
@@ -909,4 +909,30 @@ input[type=text] {
     margin: auto auto; 
     text-align: center; 
     padding: 10px;
+}
+
+/* ==================================================================
+  14.0 Presentation
+================================================================== */
+.presentation {
+    width: 100%; 
+    height: 100%; 
+    background-color: #E6E6E6;
+    display: flex;
+}
+.presentation h1{
+    text-align: center; 
+    color: #2E2E2E; 
+    font-size: 30px; 
+    font-weight: normal;
+    margin: 0 auto 50px auto;
+    padding-top: 100px;
+}
+.presentation-card {
+    display: flex; 
+    padding: 0 40px 0 40px;
+    margin: auto auto
+}
+.presentation-card p{
+    margin: 60px;
 }

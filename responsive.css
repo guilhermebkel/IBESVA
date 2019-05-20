@@ -300,24 +300,7 @@
     }
 
     /* ======== Social ========== */
-    .social{
-        width: 100vw; 
-        height: auto; 
-        padding: 50px 0 100px 0; 
-        display: flex;
-    }
-    .social-container{
-        width: auto;
-        display: flex; 
-        margin: auto auto;
-    }
-    iframe{
-        border:none;
-        overflow:hidden; 
-        width: auto; 
-        height: 500px;
-        margin: auto auto;
-    }
+    
 
     /* ======== Contact ========== */
     .contact-container{
@@ -347,6 +330,9 @@
     }
     .contact-maps-container{
         display: inline;
+    }
+    .contact-maps-container div iframe{
+        margin: auto auto 20px auto;
     }
     .contact-form form{
         margin: auto auto;

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Interface feita por Guilherme Bromonschenkel -->
+<!-- Desenvolvido por ZAMBROTTI - Soluções em Informática / Cópia proíbida e protegida por lei. -->
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133762638-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133762638-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="O Instituto de Beneficência Somos Valentes é uma associação beneficente sem fins lucrativos que tem como objetivo o planejamento de ações na área de educação e saúde visando a combater a desigualdade social.">
+    <meta name="author" content="Zambrotti - Soluções em Informática / Guilherme Bromonschenkel">
+    <meta name="keywords" content="IBESVA, Instituto de Beneficência Somos Valentes, filantropia, filantrópica">
+    <title>IBESVA - Instituto de Beneficência Somos Valentes</title>
+
+    <!--Fav and touch icons-->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+
+    <!--Common Styles Plugins-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <!--Custom Style-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="space.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+
+    <!-- Original Navbar -->
+    <div id="original-navbar" class="made-navbar">
+        <a href="index.html"><img class="made-navbar-logo" src="images/logo.png" alt="IBESVA"></a>
+        <a class="made-navbar-text" href="index.html">HOME</a>
+        <a class="made-navbar-text" href="quemsomos.html">QUEM SOMOS</a>
+        <a id="made-navbar-active" class="made-navbar-text" href="projetos.html">PROJETOS</a>
+        <a class="made-navbar-text" href="parceiros.html">PARCEIROS</a>
+        <a class="made-navbar-text" href="acompanhe.html">ACOMPANHE</a>
+        <a class="made-navbar-text" href="associe-se.html">ASSOCIE-SE</a>
+        <a class="made-navbar-text" href="contato.html">CONTATO</a>
+        <a href="doacao.html">
+            <div class="donation-button">DOAÇÕES</div>
+        </a>
+    </div>
+
+    <!-- Collapse Navbar -->
+    <nav id="collapse-navbar" class="navbar navbar-inverse">
+        <div class="container-fluid" id="no-border">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    id="no-border">
+                    <span class="icon-bar" id="collapse-icon"></span>
+                    <span class="icon-bar" id="collapse-icon"></span>
+                    <span class="icon-bar" id="collapse-icon"></span>
+                </button>
+                <a href="index.html"><img class="made-navbar-logo" src="images/logo.png" alt="IBESVA"></a>
+            </div>
+            <div class="collapse navbar-collapse no-border" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="made-navbar-text" href="index.html">HOME</a></li>
+                    <li><a class="made-navbar-text" href="quemsomos.html">QUEM SOMOS</a></li>
+                    <li><a id="active" class="made-navbar-text" href="projetos.html">PROJETOS</a></li>
+                    <li><a class="made-navbar-text" href="parceiros.html">PARCEIROS</a></li>
+                    <li><a class="made-navbar-text" href="acompanhe.html">ACOMPANHE</a></li>
+                    <li><a class="made-navbar-text" href="associe-se.html">ASSOCIE-SE</a></li>
+                    <li><a class="made-navbar-text" href="contato.html">CONTATO</a></li>
+                    <li><a class="made-navbar-text" href="doacao.html">DOAÇÕES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider-rolling">
+        <div class="slide" id="slide-1" style="display: block;">
+            <div class="slider">
+                <div class="slider-left-side">
+                    <div class="slider-left-side-center">
+                        <div class="slider-left-side-content">
+                            <h2 class="slider-title">Projetos</h2>
+                            <p class="slider-description">Conheça os projetos que o IBESVA mantém em funcionamento!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-right-side"><img class="slider-img" alt="slide" src="images/slider/slider-2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <div class="sidebar-item-content" id="sidebar-align">
+                <img class="sidebar-item-content-img" id="sidebar-align" src="images/icons/projetos/sidebar1.png">
+            </div>
+            <div>
+                <p class="sidebar-description">Projetos beneficentes</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects">
+        <h1 class="title">Projeto Leão de Judá</h1>
+        <div class="projects-container">
+            <div class="projects-container-text">
+                <p align="justify">
+                    O objetivo desse projeto é exercitar a fé cristã de forma comunitária e
+                    filantrópica, promovendo assim o compartilhamento de experiências espirituais
+                    com o Sagrado, bem como a caridade e a beneficência ensinadas pelo Mestre
+                    Jesus Cristo em nossas reuniões ordinárias ocorridas às Quartas e Sextas às
+                    19:00hs.<br><br>
+                    Aos domingos pela manhã, mais precisamente às 09:00hs, ocorre a
+                    meditação e oração sob comando da Confederação de Irmãs Beneficentes,
+                    sendo que no último domingo de cada mês realizamos a Eucaristia celebrada
+                    pelo Reverendo Daniel Queiroz Valente, seguida pelo nosso almoço de
+                    comunhão gratuito para os membros da nossa fraternidade.<br><br>
+                    Também aos domingos às 19:00hs há o nosso culto de celebração e
+                    louvor seguido de palestras motivacionais de inspiração bíblica. Também
+                    temos nossa assistência pastoral oferecida de forma personalizada às famílias
+                    que estejam passando por algum tipo de adversidade tais como abuso de
+                    álcool ou drogas, violência domiciliar e afins.<br><br>
+                    Com vistas a promover maior fortalecimento dos laços familiares através
+                    do Ensino das Sagradas Escrituras Bíblicas, interpretadas de maneira inclusiva
+                    e conforme o método histórico-critico, o PROJETO LEÃO DE JUDÁ empodera
+                    mulheres, jovens, crianças e homens ao assegurar a todos os entes familiares
+                    um ambiente de amor e compreensão que é extensivo aos lares dos
+                    frequentadores de nossas reuniões.</p>
+            </div>
+            <div class="projects-container-image">
+
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <h1 class="title">Confederação das Irmãs Beneficentes - CIB</h1>
+        <div class="projects-container">
+            <div class="projects-container-text">
+                <p align="justify">
+                    Grupo do IBESVA composto por mulheres empreendedoras, donas de
+                    casa, profissionais liberais, assalariadas e afins que voluntariamente realizam
+                    várias obras de filantropia e caridade no Instituto.<br><br>
+                    Além das visitações aos lares das comunidades do Morro do Estado e
+                    adjacências que carecem de alguma assistência espiritual e social, a CIB se
+                    reúne para programar ações de alto impacto em favor das mulheres em
+                    situação de vulnerabilidade, atuando de forma preventiva e corretiva com
+                    palestras, encaminhamento às autoridades, encontros, congressos e etc.<br><br>
+                    A CIB também realiza sorteios beneficentes, rifas solidárias, bazar de
+                    caridade e vários eventos que promovem a integração feminina e o
+                    empoderamento das mulheres à luz da Bíblia e conforme os ensinos de Jesus
+                    Cristo, além de fomentar o voluntariado e estimular a solidariedade entre os
+                    membros da comunidade.</p>
+            </div>
+            <div class="projects-container-image">
+
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <h1 class="title">Pequenos Valentes</h1>
+        <div class="projects-container">
+            <div class="projects-container-text">
+                <p align="justify">
+                    Projeto inovador promovido pelo professor Rafael Biancardini voltado
+                    para as crianças da comunidade do Morro do Estado e adjacências cujas
+                    famílias se encontram em situações de vulnerabilidade ou fragilidade de
+                    vínculos.<br><br>
+                    Atuando de forma preventiva, o projeto consiste em formar equipes de
+                    jogos colaborativos onde as crianças se dispõem a praticar jogos de tabuleiro
+                    cooperativos e virtuais sob a supervisão de equipe gabaritada e multidisciplinar
+                    que através da ludicidade consegue identificar casos de autismo, depressão
+                    infantil, dislexia e outras situações que inspirem cuidados.<br><br>
+                    Também a situação familiar é mapeada e as devidas providências são
+                    tomadas para solucionar cada caso.</p>
+            </div>
+            <div class="projects-container-image">
+
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <h1 class="title">Valentes da Música</h1>
+        <div class="projects-container">
+            <div class="projects-container-text">
+                <p align="justify">
+                    Já pensou nos benefícios que a música trás pra mente e o corpo e como
+                    ela é importante no desenvolvimento cognitivo das crianças e jovens? O
+                    grande problema é o preço! Para as famílias em situações de vulnerabilidade é
+                    impossível matricular seus filhos em cursos de música ou instrumentos em
+                    razão do custo.<br><br>
+                    No entanto, ao mantermos nossas crianças e jovens ocupados com esse
+                    importante ensino, além de contribuirmos para a redução da evasão escolar,
+                    evitar a cooptação do tráfico de drogas, permitir inserção profissional dos
+                    docentes, empoderar as crianças e jovens através da expressão dos
+                    sentimentos e pensamentos por intermédio da música e estimular o interesse
+                    pela arte e cultura, ainda propiciamos o crescimento individual de cada futuro
+                    musicista ao aprimorar seus dons e talentos musicais e artísticos.<br><br>
+                    Por todos esses motivos, o Instituto de Beneficência Somos Valentes
+                    tem como prioridade o ensino de música a preço popular e gratuito para as
+                    crianças e jovens das comunidades do Morro do Estado e adjacências.</p>
+            </div>
+            <div class="projects-container-image">
+
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <h1 class="title">Fotógrafos Valentes</h1>
+        <div class="projects-container">
+            <div class="projects-container-text">
+                <p align="justify">
+                        Esse igualmente importante projeto tem como finalidade além do Ensino
+                        técnico profissionalizante e gratuito na área da fotografia, inocular nos
+                        discentes a arte do enxergar a realidade de seu entorno.<br><br>
+                        Em tempos de “selfies” onde o egoísmo é exaltado e o EU está no
+                        centro de tudo, nada como estimular as crianças, jovens e adultos a treinar o
+                        olhar para o outro, para a sociedade, para a realidade à sua volta e conseguir
+                        capturar a imagem com as técnicas adequadas a fim de compartilhar com seus
+                        iguais a sua experiência de percepção visual.<br><br>
+                        O Instituto de Beneficência Somos Valentes promove gratuitamente
+                        esse ensino disponível para os moradores das comunidades do Morro do
+                        Estado e adjacências e para todos cujos vínculos familiares se encontram
+                        enfraquecidos.</p>
+            </div>
+            <div class="projects-container-image">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-section">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span><a href="termosecondicoes.html">Termos & Condições</a></span><br>
+                        <span>&copy; 2019 IBESVA / Desenvolvido por <a href="http://zambrotti.com"
+                                target="_blank">Zambrotti - Soluções em Informática</a> / Interface feita por <a
+                                href="https://www.linkedin.com/in/guilhermebkel/" target="_blank">Guilherme
+                                Bromonschenkel</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Common JS Plugin-->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/retina.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/headroom.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.headroom.min.js"></script>
+    <script type="text/javascript" src="js/sticky-kit.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+
+    <!-- Information Transition Button-->
+    <script>
+        function firstInformation(action) {
+            if (action == 'next') {
+                var x = document.getElementsByClassName("information-slide");
+                x[1].style.animation = "fadeIn 1s";
+                x[0].style.display = "none";
+                x[1].style.display = "block";
+                x[2].style.display = "none";
+                x[3].style.display = "none";
+            }
+            if (action == 'previous') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "none";
+                x[1].style.display = "none";
+                x[2].style.display = "none";
+                x[3].style.display = "block";
+                x[3].style.animation = "fadeIn 1s";
+            }
+        }
+        function secondInformation(action) {
+            if (action == 'next') {
+                var x = document.getElementsByClassName("information-slide");
+                x[2].style.display = "block";
+                x[1].style.display = "none";
+                x[0].style.display = "none";
+                x[3].style.display = "none";
+                x[2].style.animation = "fadeIn 1s";
+            }
+            if (action == 'previous') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "block";
+                x[1].style.display = "none";
+                x[2].style.display = "none";
+                x[3].style.display = "none";
+                x[0].style.animation = "fadeIn 1s";
+            }
+        }
+        function thirdInformation(action) {
+            if (action == 'next') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "none";
+                x[1].style.display = "none";
+                x[2].style.display = "none";
+                x[3].style.display = "block";
+                x[3].style.animation = "fadeIn 1s";
+            }
+            if (action == 'previous') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "none";
+                x[1].style.display = "block";
+                x[2].style.display = "none";
+                x[3].style.display = "none";
+                x[1].style.animation = "fadeIn 1s";
+            }
+        }
+        function fourthInformation(action) {
+            if (action == 'next') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "block";
+                x[1].style.display = "none";
+                x[2].style.display = "none";
+                x[3].style.display = "none";
+                x[0].style.animation = "fadeIn 1s";
+            }
+            if (action == 'previous') {
+                var x = document.getElementsByClassName("information-slide");
+                x[0].style.display = "none";
+                x[1].style.display = "none";
+                x[2].style.display = "block";
+                x[3].style.display = "none";
+                x[2].style.animation = "fadeIn 1s";
+            }
+        }
+    </script>
+
+    <!-- Information Transition Swipe-->
+    <script>
+        $(document).ready(function () {
+            $("#first").swiperight(function () {
+                firstInformation('next');
+            });
+            $("#first").swipeleft(function () {
+                firstInformation('previous');
+            });
+
+            $("#second").swiperight(function () {
+                secondInformation('next');
+            });
+            $("#second").swipeleft(function () {
+                secondInformation('previous');
+            });
+
+            $("#third").swiperight(function () {
+                thirdInformation('next');
+            });
+            $("#third").swipeleft(function () {
+                thirdInformation('previous');
+            });
+
+            $("#fourth").swiperight(function () {
+                fourthInformation('next');
+            });
+            $("#fourth").swipeleft(function () {
+                fourthInformation('previous');
+            });
+        });
+    </script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+<!-- Interface feita por Guilherme Bromonschenkel -->
+<!-- Desenvolvido por ZAMBROTTI - Soluções em Informática / Cópia proíbida e protegida por lei. -->
+
+</html>

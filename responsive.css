@@ -596,6 +596,40 @@
         font-weight: normal;
     }    
 
+    /*========= Projects ============*/
+    .projects{
+        width: 100vw; 
+        height: auto; 
+        display: inline-block; 
+        padding-bottom: 50px;
+    }
+    .projects-title{
+        text-align: center; 
+        color: #2E2E2E; 
+        font-size: 25px; 
+        font-weight: normal;
+        text-align: center;
+    }
+    .projects-container{
+        width: 100vw; 
+        height: auto; 
+        display: inline-block;
+    }
+    .projects-container-text{
+        width: 100vw; 
+        height: auto; 
+        display: flex;
+    }
+    .projects-container-text p{
+        margin: 30px;
+    }
+    .projects-container-image{
+        width: 100vw; 
+        height: 60vw;
+        margin-top: 20px; 
+        background-color: lightgray;
+    }
+
     /* ========= Partners =============*/
     .partners h1{
         text-align: center; 

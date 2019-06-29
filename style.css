@@ -946,13 +946,20 @@ input[type=text] {
 }
 
 /* ==================================================================
-  14.0 Collapse Navbar
+  15.0 Projects
 ================================================================== */
 .projects{
     width: 100vw; 
     height: auto; 
     display: inline-block; 
     padding-bottom: 50px;
+}
+.projects-title{
+    text-align: center; 
+    color: #2E2E2E; 
+    font-size: 30px; 
+    font-weight: normal;
+    text-align: center;
 }
 .projects-container{
     width: 100vw; 

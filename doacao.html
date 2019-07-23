@@ -97,24 +97,56 @@
             </div>
         </div>
     </nav>
+        
+    <!-- Background -->
+    <img class="donation-background" alt="slide" src="images/slider/slider-2.jpg">
 
     <!-- Donation Grid -->
     <div class="donation-container">
-        <h1>Salve Vidas!</h1>
+        <h1>#FAÇA A DIFERENÇA</h1>
         <p>Você sabe a diferença que essas pessoas podem trazer para a sociedade? Nós, da IBESVA,
             sabemos e, fazemos o possível para catalisar ainda mais esse potencial! Agora você também
             tem a oportunidade de ajudá-las a se tornarem cada vez mais fortes!
         </p>
         <div class="donation-grid">
             <section>
-                <h1>R$20</h1>
-                <button>Doar agora</button>
+                <h1 style="font-size: 35px">R$20</h1>
+                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                    <input type="hidden" name="currency" value="BRL" />
+                    <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                    <input type="hidden" name="iot" value="button" />
+                    <button type="submit">Doar agora</button>
+                </form>
+            </section>
+            <section>
+                <h1 style="font-size: 35px">R$50</h1>
+                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                    <input type="hidden" name="currency" value="BRL" />
+                    <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                    <input type="hidden" name="iot" value="button" />
+                    <button type="submit">Doar agora</button>
+                </form>
+            </section>
+            <section>
+                <h1 style="font-size: 35px">R$100</h1>
+                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                    <input type="hidden" name="currency" value="BRL" />
+                    <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                    <input type="hidden" name="iot" value="button" />
+                    <button type="submit">Doar agora</button>
+                </form>
+            </section>
+            <section>
+                <h1 style="font-size: 30px">OUTROS</h1>
+                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                    <input type="hidden" name="currency" value="BRL" />
+                    <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                    <input type="hidden" name="iot" value="button" />
+                    <button type="submit">Doar agora</button>
+                </form>
             </section>
         </div>
     </div>
-
-    <!-- Background -->
-    <img class="donation-background" alt="slide" src="images/slider/slider-2.jpg">
     
     <!--Common JS Plugin-->
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>

@@ -410,7 +410,25 @@
         color: #ff0000;
         border: solid 2px #ff0000;
         -webkit-transition: all 0.2s ease;
-    }    
+    } 
+    .donation-grid-single {
+        display: grid;
+        grid-template-columns: 90vw;
+    }
+    .donation-grid-single section {
+        margin-top: 30px;
+        height: 170px;
+    }
+    .donation-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .donation-container .arrow {
+        display: none;
+    }
+    #donation-2 {
+        display: grid;
+    }
 
     /* ======== Presentation ========== */
     .presentation {

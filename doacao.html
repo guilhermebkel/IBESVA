@@ -108,43 +108,60 @@
             sabemos e, fazemos o possível para catalisar ainda mais esse potencial! Agora você também
             tem a oportunidade de ajudá-las a se tornarem cada vez mais fortes!
         </p>
-        <div class="donation-grid">
-            <section>
-                <h1 style="font-size: 35px">R$20</h1>
-                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
-                    <input type="hidden" name="currency" value="BRL" />
-                    <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
-                    <input type="hidden" name="iot" value="button" />
-                    <button type="submit">Doar agora</button>
-                </form>
-            </section>
-            <section>
-                <h1 style="font-size: 35px">R$50</h1>
-                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
-                    <input type="hidden" name="currency" value="BRL" />
-                    <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
-                    <input type="hidden" name="iot" value="button" />
-                    <button type="submit">Doar agora</button>
-                </form>
-            </section>
-            <section>
-                <h1 style="font-size: 35px">R$100</h1>
-                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
-                    <input type="hidden" name="currency" value="BRL" />
-                    <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
-                    <input type="hidden" name="iot" value="button" />
-                    <button type="submit">Doar agora</button>
-                </form>
-            </section>
-            <section>
-                <h1 style="font-size: 30px">OUTROS</h1>
-                <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
-                    <input type="hidden" name="currency" value="BRL" />
-                    <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
-                    <input type="hidden" name="iot" value="button" />
-                    <button type="submit">Doar agora</button>
-                </form>
-            </section>
+        <div id="donation-1" class="donation-cards">
+            <div class="donation-grid">
+                <section>
+                    <h1 style="font-size: 35px">R$20</h1>
+                    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                        <input type="hidden" name="currency" value="BRL" />
+                        <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                        <input type="hidden" name="iot" value="button" />
+                        <button type="submit">Doar agora</button>
+                    </form>
+                </section>
+                <section>
+                    <h1 style="font-size: 35px">R$50</h1>
+                    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                        <input type="hidden" name="currency" value="BRL" />
+                        <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                        <input type="hidden" name="iot" value="button" />
+                        <button type="submit">Doar agora</button>
+                    </form>
+                </section>
+                <section>
+                    <h1 style="font-size: 35px">R$100</h1>
+                    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                        <input type="hidden" name="currency" value="BRL" />
+                        <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                        <input type="hidden" name="iot" value="button" />
+                        <button type="submit">Doar agora</button>
+                    </form>
+                </section>
+                <section>
+                    <h1 style="font-size: 30px">OUTROS</h1>
+                    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                        <input type="hidden" name="currency" value="BRL" />
+                        <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                        <input type="hidden" name="iot" value="button" />
+                        <button type="submit">Doar agora</button>
+                    </form>
+                </section>
+            </div>
+            <div class="arrow" onclick="changeDonation('next')"><i class="arrow-right"></i></div>
+        </div>
+        <div id="donation-2" class="donation-cards" style="display: none">
+            <div class="donation-grid-single">
+                <section>
+                    <h1 style="font-size: 30px">OUTROS</h1>
+                    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" align="center">
+                        <input type="hidden" name="currency" value="BRL" />
+                        <input type="hidden" name="receiverEmail" value="contato@ibesva.com" />
+                        <input type="hidden" name="iot" value="button" />
+                        <button type="submit">Doar agora</button>
+                    </form>
+                </section>
+            </div>
+            <div class="arrow" onclick="changeDonation('back')"><i class="arrow-right"></i></div>
         </div>
     </div>
     
@@ -170,6 +187,20 @@
 
 
     <!-- Custom JS -->
+    <script>
+        function changeDonation(action) {
+            if (action == 'next') {
+                var x = document.getElementsByClassName("donation-cards");
+                x[0].style.display = "none";
+                x[1].style.display = "flex";
+            }
+            if (action == 'back') {
+                var x = document.getElementsByClassName("donation-cards");
+                x[0].style.display = "flex";
+                x[1].style.display = "none";
+            }
+        }
+    </script>
     <script type="text/javascript" src="js/custom.js"></script>
 </body>
 

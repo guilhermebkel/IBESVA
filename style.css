@@ -859,6 +859,8 @@ input[type=text] {
 .donation-cards{
     margin: 0 auto;
     display: flex;
+    align-content: center;
+    align-items: center;
 }
 .donation-container{
     margin-top: 67px; 
@@ -884,6 +886,7 @@ input[type=text] {
     width: 40vw;
     margin: 0 auto;
     color: white;
+    margin-bottom: 20px;
 }
 .donation-background {
     height: 100vh;
@@ -892,12 +895,41 @@ input[type=text] {
     z-index: -1;
 }
 .donation-grid-single {
-    margin: 30px auto auto auto;
     display: grid;
     grid-template-columns: 17vw;
 }
+.donation-grid-single section {
+    margin: 15px;
+    width: auto;
+    height: auto;
+    background-color: #ff0000;
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+.donation-grid-single section h1 {
+    color: white;
+    border: none;
+    line-height: 0;
+    width: 180px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.donation-grid-single section p {
+    margin: 10px auto 20px auto;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    width: 180px;
+}
+.donation-grid-single section p strong {
+    text-decoration: underline;
+}
+
 .donation-grid {
-    margin: 30px auto auto auto;
+    padding: 30px auto auto auto;
     display: grid;
     grid-template-columns: 17vw 17vw;
 }
@@ -924,7 +956,7 @@ input[type=text] {
     outline: none;
     border: none;
     background-color: #ff0000;
-    order: solid 2px #ff0000;
+    border: solid 2px #ff0000;
     border-radius: 10px;
     font-size: 15px;
     height: 40px;
@@ -938,6 +970,9 @@ input[type=text] {
     color: #ff0000;
     border: solid 2px #ff0000;
     -webkit-transition: all 0.2s ease;
+}
+#donation-2 {
+    display: none;
 }
 
 /* ==================================================================

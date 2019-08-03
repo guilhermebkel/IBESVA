@@ -657,8 +657,7 @@
     .projects-container-image{
         width: 100vw; 
         height: 60vw;
-        margin-top: 20px; 
-        background-color: lightgray;
+        margin-bottom: 150px;
     }
 
     /* ========= Partners =============*/
